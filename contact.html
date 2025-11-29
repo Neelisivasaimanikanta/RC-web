@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Ramchait Technologies</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/favicon.png">
+
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+         <a href="#" class="logo" style="display:flex; align-items:center; text-decoration:none;">
+  <img src="/favicon.ico" alt="Ramchait Technologies Logo" style="height:50px; margin-right:8px;">
+  <span>Ramchait Technologies</span>
+</a>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+        <div class="menu" id="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="has-submenu">
+                    <a href="ourservices.html" id="submenuToggle">Our Services &#9662;</a>
+                    <div class="submenu" id="submenu">
+                        <a href="web-development.html">Web Development</a>
+                        <a href="digital-marketing.html">Digital Marketing</a>
+                        <a href="consulting.html">Consulting Services</a>
+                        <a href="manualtesting.html">Manual Testing</a>
+                    </div>
+                </li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    
+
+
+
+    <!-- Contact Form -->
+    <div class="whole-contact">
+        <section class="contact">
+            <h2>Contact Me!</h2>
+
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="c95dc32d-07c5-4c4e-bb4c-1b5b08b87377">
+                
+                <div class="input-box">
+                    <div class="input-field field">
+                        <input type="text" placeholder="Your Name" id="name" class="item" autocomplete="off" name="first_name" required>
+                        <div class="error-txt">Full Name can't be blank</div>
+                    </div>
+                    <div class="input-field field">
+                        <input type="email" placeholder="Your Email" id="email" class="item" autocomplete="off" name="email" required>
+                        <div class="error-txt">Email can't be blank</div>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <div class="input-field field">
+                        <input type="tel" placeholder="Phone Number" id="phone" class="item" autocomplete="off" name="phone" required>
+                        <div class="error-txt">Phone Number can't be blank</div>
+                    </div>
+                    <div class="input-field field">
+                        <input type="text" placeholder="Subject" id="subject" class="item" autocomplete="off" name="subject" required>
+                        <div class="error-txt">Subject can't be blank</div>
+                    </div>
+                </div>
+
+                <div class="textarea-field field">
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message" class="item" autocomplete="off" required></textarea>
+                    <div class="error-txt">Message can't be blank</div>
+                </div>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+        <!-- Google Map -->
+     <div class="map-section">
+        <h3>Our Location - Rajahmundry</h3>
+        <div class="custom-map">
+            <iframe 
+            src="https://www.google.com/maps/embed?pb=!4v1752650995173!6m8!1m7!1sh74ZsH5EW8ICGQMtHdKfwA!2m2!1d16.92785676470655!2d81.79346046049818!3f65.39925774466464!4f-6.114183528483963!5f0.7820865974627469"
+                width="100%" 
+                height="300" 
+                style="border:0; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+
+
+    <!-- Contact Footer Section -->
+    <section class="new-contact-section" id="contact">
+        <div class="rotating-ring ring1"></div>
+        <div class="rotating-ring ring2"></div>
+
+        <div class="contact-content">
+            <!-- Quick Links -->
+            <div class="quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home"><span>🏠</span><span>Home</span></a></li>
+                <li><a href="about.html"><span>ℹ️</span><span>About</span></a></li>
+                <li><a href="ourservices.html"><span>💼</span><span>Our-Services</span></a></li>
+                <li><a href="portfolio.html"><span>🖼️</span><span>Portfolio</span></a></li>
+                <li><a href="careers.html"><span>🎯</span><span>Careers</span></a></li>
+                <li><a href="blog.html"><span>📝</span><span>Blog</span></a></li>
+                <li><a href="contact.html"><span>✉️</span><span>Contact</span></a></li>
+
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="contact-container">
+                <h2 class="contact-title">Get in Touch</h2>
+                <p class="contact-subtitle">We are ready to build something amazing with you!</p>
+
+                <div class="contact-info">
+                    <p><strong>Email:</strong> hr@ramchaittechnologies.com</p>
+                    <p><strong>Phone:</strong> +91-9441308275</p>
+                </div>
+
+                <a href="contact.html" class="contact-button">Contact Us Now</a>
+            </div>
+
+            <!-- Social Media -->
+            <div class="social-media">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61580376749179" target="_blank"><img src="https://img.icons8.com/fluency/48/facebook-new.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/ramchaittechnologiespvtltd/" target="_blank"><img src="https://img.icons8.com/fluency/48/instagram-new.png" alt="Instagram"></a>
+                    <a href="https://x.com/RamchaitTechno" target="_blank"><img src="https://img.icons8.com/fluency/48/twitterx.png" alt="Twitter"></a>
+                    <a href="https://www.linkedin.com/company/ramchaittechnologies/posts/?feedView=all" target="_blank"><img src="https://img.icons8.com/fluency/48/linkedin.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="contact.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+</script>
+
+
+</body>
+</html>

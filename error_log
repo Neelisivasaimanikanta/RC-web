@@ -1,0 +1,5 @@
+[22-Aug-2025 04:16:31 UTC] PHP Warning:  require(wp-blog-header.php): Failed to open stream: No such file or directory in /home2/ramchmo4/public_html/sapp-wp-signon.php on line 40
+[22-Aug-2025 04:16:31 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'wp-blog-header.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home2/ramchmo4/public_html/sapp-wp-signon.php:40
+Stack trace:
+#0 {main}
+  thrown in /home2/ramchmo4/public_html/sapp-wp-signon.php on line 40

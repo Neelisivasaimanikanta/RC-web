@@ -1,0 +1,1333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join Ramchait Technologies — a leading digital marketing company in Andhrapradesh. Explore exciting career opportunities in web development, SEO, social media marketing, content creation, and more. Build your future with innovation and creativity.">
+    <title>Careers at Ramchait Technologies</title>
+
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/favicon.png">
+    <link rel="stylesheet" href="services.css">
+</head>
+<body>
+   <nav class="navbar">
+         <a href="#" class="logo" style="display:flex; align-items:center; text-decoration:none;">
+  <img src="/favicon.ico" alt="Ramchait Technologies Logo" style="height:50px; margin-right:8px;">
+  <span>Ramchait Technologies</span>
+</a>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+        <div class="menu" id="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="has-submenu">
+                    <a href="ourservices.html" id="submenuToggle">Our Services &#9662;</a>
+                    <div class="submenu" id="submenu">
+                        <a href="web-development.html">Web Development</a>
+                        <a href="digital-marketing.html">Digital Marketing</a>
+                        <a href="consulting.html">Consulting Services</a>
+                        <a href="manualtesting.html">Manual Testing</a>
+                    </div>
+                </li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <style>
+  /* PARTICLES BACKGROUND */
+  #particles { position:fixed; top:0; left:0; width:100%; height:100%; z-index:-2; }
+
+  /* HERO */
+  /* HERO SECTION */
+
+  /* SECTIONS */
+  section { padding:80px 10%; }
+  section h2 { font-size:2.5rem; text-align:center; margin-bottom:50px; color:#E0E0E0; text-shadow:0 0 10px #9C27B0; transition:text-shadow 0.5s ease; }
+  section h2:hover { text-shadow:0 0 20px #E040FB, 0 0 10px #9C27B0; }
+
+  /* CARDS */
+  .cards { display:flex; flex-wrap:wrap; gap:30px; justify-content:center; }
+  .card {
+    background:#2E0E5E; border-radius:15px; padding:30px 20px; width:280px; text-align:center;
+    transition:0.5s; box-shadow:0 5px 15px rgba(0,0,0,0.3); transform-style: preserve-3d;
+  }
+  .card:hover { transform: scale(1.05) rotateY(3deg) rotateX(2deg); box-shadow:0 15px 25px rgba(156,39,176,0.8), 0 0 20px #E040FB; }
+  .card img { width:100px; height:100px; margin-bottom:15px; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+  .card img:hover { transform: scale(1.1) rotate(-5deg); box-shadow:0 0 20px #9C27B0; }
+  .card h3 { margin-bottom:10px; color:#9C27B0; transition: color 0.3s ease, text-shadow 0.3s ease; text-shadow:0 0 5px #9C27B0; }
+  .card h3:hover { color:#E040FB; text-shadow:0 0 15px #E040FB; }
+  .card p { font-size:0.95rem; color:#E0E0E0; }
+
+  /* LIFE AT COMPANY */
+  .life-gallery { display:flex; flex-wrap:wrap; gap:30px; justify-content:center; }
+  .life-card {
+    background:#2E0E5E; border-radius:15px; width:300px; padding:20px; text-align:center;
+    transition:0.5s; box-shadow:0 5px 15px rgba(0,0,0,0.3); opacity:0; transform: translateY(30px);
+  }
+  .life-card.visible { opacity:1; transform: translateY(0); transition: all 0.7s ease-out; }
+  .life-card img { width:100%; height:200px; object-fit:cover; border-radius:12px; transition: all 0.5s ease; filter: drop-shadow(0 0 15px #9C27B0); }
+  .life-card:hover { transform: scale(1.05); box-shadow:0 15px 30px rgba(156,39,176,0.7), 0 0 20px #E040FB; }
+  .life-card:hover img { transform: scale(1.05) rotate(1deg); filter: drop-shadow(0 0 25px #E040FB); }
+  .life-card h3 { margin-top:15px; color:#9C27B0; text-shadow:0 0 5px #9C27B0; }
+  .life-card p { margin-top:10px; font-size:0.9rem; color:#E0E0E0; }
+
+  /* ACHIEVEMENTS / STATS */
+  .stats { display:flex; justify-content:center; gap:50px; flex-wrap:wrap; }
+  .stat { text-align:center; transition: all 0.3s ease; }
+  .stat img { width:100px; margin-bottom:15px; transition: transform 0.3s ease, filter 0.3s ease; }
+  .stat img:hover { transform: scale(1.1); filter: drop-shadow(0 0 20px #E040FB); }
+  .stat h3 { font-size:2rem; color:#9C27B0; transition: transform 0.3s ease, text-shadow 0.3s ease; text-shadow:0 0 10px #9C27B0; }
+  .stat h3:hover { transform: scale(1.1); color:#E040FB; text-shadow:0 0 25px #E040FB; }
+  .stat p { color:#E0E0E0; font-size:1rem; }
+
+  /* FADE IN ANIMATION */
+  .fade { opacity:0; transform: translateY(20px); transition: all 0.6s ease-in-out; }
+  .fade.visible { opacity:1; transform: translateY(0); }
+
+  @media(max-width:768px){ .cards, .stats, .timeline, .life-gallery { flex-direction:column; align-items:center; } }
+</style>
+</head>
+<body>
+
+<!-- PARTICLES -->
+<canvas id="particles"></canvas>
+
+<!-- HERO -->
+<style>
+
+ * { margin:0; padding:0; box-sizing:border-box; font-family: 'Roboto', sans-serif; }
+  body { background: #1B0B3B; color: #E0E0E0; scroll-behavior: smooth; overflow-x:hidden; }
+  a { text-decoration:none; color:inherit; }
+
+  /* PARTICLES BACKGROUND */
+  #particles { position:fixed; top:0; left:0; width:100%; height:100%; z-index:-2; }
+
+  /* ---------------------------
+     HERO WRAPPER
+  --------------------------- */
+  #ncHeroRoot {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    perspective: 1200px; /* helps with subtle 3d */
+  }
+
+  /* Animated neon gradient layer */
+  #ncGradientLayer {
+    position:absolute;
+    inset: 0;
+    background: linear-gradient(120deg,#6a00f4 0%, #3b82f6 30%, #00e6ff 60%, #8b5cf6 100%);
+    background-size: 400% 400%;
+    filter: blur(40px) saturate(1.2);
+    opacity: 0.9;
+    z-index: 5;
+    transform: translateZ(-100px) scale(1.15);
+    animation: ncGradientShift 18s linear infinite;
+    mix-blend-mode: screen;
+  }
+
+  @keyframes ncGradientShift {
+    0%{ background-position: 0% 50%; }
+    50%{ background-position: 100% 50%; }
+    100%{ background-position: 0% 50%; }
+  }
+
+  /* Canvas for particle VFX */
+  #ncVfxCanvas {
+    position: absolute;
+    inset: 0;
+    z-index: 8;
+    pointer-events: none; /* let interactions pass through */
+  }
+
+  /* PARALLAX PNG LAYERS (decorative) */
+  .ncLayer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1200px;
+    height: 800px;
+    transform: translate(-50%,-50%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    pointer-events: none;
+    z-index: 10;
+    opacity: 0.95;
+    will-change: transform, opacity;
+    filter: drop-shadow(0 20px 60px rgba(80,0,140,0.12));
+  }
+
+  /* layer variants (replace images in assets/) */
+  .ncLayer-bgShapes  { background-image: url("assets/neon-bg-shapes.png"); opacity:0.6; transform-origin:center; }
+  .ncLayer-midGlow   { background-image: url("assets/neon-mid.png"); width:900px; height:600px; opacity:0.9; filter: blur(6px) saturate(1.1); }
+  .ncLayer-foreground{ background-image: url("assets/neon-foreground.png"); width:700px; height:500px; opacity:1; mix-blend-mode:screen; }
+
+  /* subtle vignette on top */
+  #ncVignette {
+    position:absolute; inset:0; z-index: 60;
+    background: radial-gradient(60% 60% at 50% 40%, rgba(255,255,255,0.02), rgba(0,0,0,0.55));
+    pointer-events:none;
+  }
+
+  /* HERO CONTENT CARD (center) */
+  #ncHeroCard {
+    position: relative;
+    z-index: 70;
+    width: min(980px, 92%);
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+    place-items: center;
+    text-align: center;
+    transform-style: preserve-3d;
+    transition: transform 0.14s ease-out;
+    padding: 40px;
+  }
+
+  /* Glow frame */
+  #ncHeroCard::before{
+    content:"";
+    position:absolute; inset:-2px; z-index:-1; border-radius:16px;
+    background: linear-gradient(90deg, rgba(106,0,244,0.45), rgba(59,130,246,0.35), rgba(0,230,255,0.25));
+    filter: blur(20px) contrast(1.05);
+    pointer-events:none;
+  }
+
+  /* Logo */
+  #ncLogo {
+    width: 140px;
+    height: 140px;
+    border-radius: 20px;
+    background: rgba(10, 10, 20, 0.65);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Dark + neon glow */
+    box-shadow:
+        0 0 18px rgba(0, 160, 255, 0.55),
+        0 0 40px rgba(0, 160, 255, 0.25),
+        inset 0 0 10px rgba(0, 160, 255, 0.2);
+
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+
+    /* Slow glow animation */
+    animation: darkNeon 4s ease-in-out infinite alternate;
+}
+
+@keyframes darkNeon {
+    0% { box-shadow: 0 0 18px rgba(0,160,255,0.55), 0 0 40px rgba(0,160,255,0.25); }
+    100% { box-shadow: 0 0 26px rgba(0,160,255,0.75), 0 0 55px rgba(0,160,255,0.45); }
+}
+
+  #ncLogo img { width: 70%; height: auto; display:block; }
+
+  /* Title with neon glow */
+  #ncTitle {
+    font-size: clamp(2.2rem, 4vw, 3.6rem);
+    line-height: 1.02;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: #000000;
+    
+  }
+
+  /* Animated gradient text overlay */
+  #ncTitle span {
+    background: linear-gradient(90deg, #ffffff, #c6a0ff 30%, #80d6ff 60%, #baffff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    animation: ncTextShift 6s linear infinite;
+  }
+  @keyframes ncTextShift {
+    0%{ background-position: 0% 0%; }
+    50%{ background-position: 100% 0%; }
+    100%{ background-position: 0% 0%; }
+  }
+
+  /* Sub text */
+  #ncSubtitle {
+    font-size: 1.05rem;
+    color: rgba(235,235,255,0.92);
+    max-width: 900px;
+    transform: translateZ(20px);
+    text-shadow: 0 6px 30px rgba(0,0,0,0.4);
+    opacity: 0.95;
+  }
+
+  /* CTA */
+  #ncCta {
+    margin-top: 10px;
+    display: inline-block;
+    padding: 14px 36px;
+    border-radius: 999px;
+    font-weight: 800;
+    text-decoration: none;
+    color: #06060a;
+    background: linear-gradient(90deg, #b87bff, #53cfff);
+    box-shadow:
+      0 6px 28px rgba(106,0,244,0.28),
+      0 0 40px rgba(59,130,246,0.15);
+    transform: translateZ(18px);
+    transition: transform .18s ease, box-shadow .18s ease;
+  }
+  #ncCta:hover { transform: translateY(-6px) scale(1.02); box-shadow: 0 12px 60px rgba(59,130,246,0.26); }
+
+  /* small helper under CTA */
+  #ncHint {
+    margin-top: 6px;
+    font-size: 0.9rem;
+    color: rgba(200,200,255,0.6);
+  }
+
+  /* small floating spark (decor) */
+  .ncSpark {
+    position: absolute; width:12px; height:12px; border-radius:50%;
+    background: radial-gradient(circle, #fff, #9ad9ff 40%, #7a3bff 100%);
+    filter: blur(3px) saturate(1.3);
+    z-index: 72;
+    pointer-events:none;
+    transform: translateZ(60px);
+  }
+
+  /* RESPONSIVE ADJUST */
+  @media (max-width:900px) {
+    #ncHeroCard { padding: 22px; }
+    .ncLayer { width: 1000px; height: 700px; }
+  }
+  @media (max-width:600px) {
+    #ncHeroCard { padding: 18px; }
+    #ncCta{ padding: 12px 26px; font-size:0.96rem; }
+    .ncLayer { width: 760px; height:520px; opacity:0.9; }
+  }
+</style>
+</head>
+<body>
+
+<div id="ncHeroRoot">
+  <!-- animated gradient (backdrop) -->
+  <div id="ncGradientLayer"></div>
+
+  <!-- canvas for particles & VFX -->
+  <canvas id="ncVfxCanvas"></canvas>
+
+  <!-- parallax decorative png layers -->
+  <div class="ncLayer ncLayer-bgShapes" data-depth="0.08"></div>
+  <div class="ncLayer ncLayer-midGlow"  data-depth="0.18"></div>
+  <div class="ncLayer ncLayer-foreground" data-depth="0.32"></div>
+
+  <!-- central hero content -->
+  <div id="ncHeroCard" aria-hidden="false">
+    <div id="ncLogo"><img src="/favicon.ico" alt="RamChait Logo"></div>
+    <h1 id="ncTitle"><span>Welcome to RamChait Careers</span></h1>
+    <p id="ncSubtitle">Join Our team — where creativity meets code. Build a colorful, vibrant future with us.</p>
+    <a id="ncCta" href="#current-jobs">View Open Roles</a>
+    <div id="ncHint">Scroll to explore • Move your mouse</div>
+  </div>
+
+  <!-- vignette & extra visual layering -->
+  <div id="ncVignette"></div>
+
+  <!-- tiny decorative spark (you can clone or position more via JS if desired) -->
+  <div class="ncSpark" style="left:10%; top:18%;"></div>
+  <div class="ncSpark" style="left:86%; top:72%; width:16px; height:16px;"></div>
+</div>
+
+<!-- ---------------------------
+     JAVASCRIPT (parallax, vfx)
+--------------------------- -->
+<script>
+/* ============================
+   CANVAS PARTICLE VFX (neon)
+   - responsive
+   - mouse interactive (repel)
+   - connects nearby particles
+============================ */
+(function(){
+  const canvas = document.getElementById('ncVfxCanvas');
+  const ctx = canvas.getContext('2d', { alpha: true });
+  let W = canvas.width = window.innerWidth;
+  let H = canvas.height = window.innerHeight;
+
+  // particles
+  const particles = [];
+  const PARTICLE_COUNT = Math.max(60, Math.floor((W*H)/90000)); // scale with screen
+  const mouse = { x: W/2, y: H/2, r: 12000, down:false };
+
+  // utility
+  function rand(min,max){ return Math.random()*(max-min)+min; }
+
+  // particle constructor
+  function Particle(){
+    this.x = rand(0,W);
+    this.y = rand(0,H);
+    this.vx = rand(-0.25,0.25);
+    this.vy = rand(-0.25,0.25);
+    this.size = rand(1,3.4);
+    this.baseSize = this.size;
+    this.cool = rand(0.5,1.5);
+    this.h = rand(240,280); // hue around neon purple/blue
+    this.s = rand(70,95);
+    this.l = rand(55,75);
+  }
+
+  Particle.prototype.update = function(){
+    // velocity
+    this.x += this.vx;
+    this.y += this.vy;
+
+    // wrap edges
+    if(this.x < -50) this.x = W + 50;
+    if(this.x > W + 50) this.x = -50;
+    if(this.y < -50) this.y = H + 50;
+    if(this.y > H + 50) this.y = -50;
+
+    // gentle breathing size
+    this.size = this.baseSize + Math.sin(Date.now()/1200 * this.cool + this.x)*0.4;
+
+    // mouse repel
+    const dx = this.x - mouse.x;
+    const dy = this.y - mouse.y;
+    const d2 = dx*dx + dy*dy;
+    if(d2 < mouse.r){
+      const force = (mouse.r - d2) / mouse.r;
+      const angle = Math.atan2(dy, dx);
+      this.vx += Math.cos(angle) * force * 0.03;
+      this.vy += Math.sin(angle) * force * 0.03;
+    }
+    // slow down velocities
+    this.vx *= 0.995;
+    this.vy *= 0.995;
+  };
+
+  Particle.prototype.draw = function(){
+    // neon glow layers: outer soft, inner bright
+    const grad = ctx.createRadialGradient(this.x, this.y, 0, this.x, this.y, Math.max(12, this.size*10));
+    grad.addColorStop(0, `hsla(${this.h}, ${this.s}%, ${this.l}%, 0.95)`);
+    grad.addColorStop(0.4, `hsla(${this.h+40}, ${this.s-10}%, ${this.l-20}%, 0.35)`);
+    grad.addColorStop(1, `hsla(${this.h+60}, ${this.s-5}%, ${this.l-40}%, 0)`);
+
+    ctx.beginPath();
+    ctx.fillStyle = grad;
+    ctx.arc(this.x, this.y, Math.max(1, this.size*2.8), 0, Math.PI*2);
+    ctx.fill();
+
+    // bright core
+    ctx.beginPath();
+    ctx.fillStyle = `hsla(${this.h}, ${this.s}%, ${this.l}%, 1)`;
+    ctx.arc(this.x, this.y, Math.max(0.6, this.size*0.6), 0, Math.PI*2);
+    ctx.fill();
+  };
+
+  function initParticles(){
+    particles.length = 0;
+    for(let i=0;i<PARTICLE_COUNT;i++) particles.push(new Particle());
+  }
+
+  // draw connection lines between nearby particles
+  function drawConnections(){
+    const maxDist = 140; // connection radius
+    for(let i=0;i<particles.length;i++){
+      const a = particles[i];
+      for(let j=i+1;j<particles.length;j++){
+        const b = particles[j];
+        const dx = a.x - b.x;
+        const dy = a.y - b.y;
+        const d2 = dx*dx + dy*dy;
+        if(d2 < maxDist*maxDist){
+          const alpha = 0.45 * (1 - (d2/(maxDist*maxDist)));
+          ctx.strokeStyle = `hsla(${(a.h+b.h)/2+10}, ${Math.min(100,(a.s+b.s)/2)}%, ${Math.min(90,(a.l+b.l)/2)}%, ${alpha})`;
+          ctx.lineWidth = 0.8;
+          ctx.beginPath();
+          ctx.moveTo(a.x, a.y);
+          ctx.lineTo(b.x, b.y);
+          ctx.stroke();
+        }
+      }
+    }
+  }
+
+  // main loop
+  function loop(){
+    ctx.clearRect(0,0,W,H);
+
+    // subtle backdrop dim to create tail effect
+    ctx.fillStyle = 'rgba(6,4,12,0.12)';
+    ctx.fillRect(0,0,W,H);
+
+    // update + draw
+    for(let p of particles){
+      p.update();
+      p.draw();
+    }
+    drawConnections();
+    requestAnimationFrame(loop);
+  }
+
+  // resize handler
+  function resize(){
+    W = canvas.width = window.innerWidth;
+    H = canvas.height = window.innerHeight;
+    // adjust mouse safe radius with screen size
+    mouse.r = (W*H) / 5000;
+    initParticles();
+  }
+
+  // mouse handling
+  window.addEventListener('mousemove', (e)=>{
+    mouse.x = e.clientX;
+    mouse.y = e.clientY;
+  });
+  window.addEventListener('touchmove', (e)=>{
+    if(e.touches && e.touches[0]) {
+      mouse.x = e.touches[0].clientX;
+      mouse.y = e.touches[0].clientY;
+    }
+  }, { passive:true });
+
+  window.addEventListener('resize', resize);
+  resize();
+  loop();
+})();
+
+/* ============================
+   PARALLAX LAYER SCROLL & MOUSE (3D) INTERACTIONS
+   - data-depth attribute defines how strongly layer reacts
+============================ */
+(function(){
+  const root = document.getElementById('ncHeroRoot');
+  const layers = Array.from(root.querySelectorAll('.ncLayer'));
+  const card = document.getElementById('ncHeroCard');
+  const maxTilt = 8; // degrees for card tilt
+
+  // read depth on each layer
+  const layerInfos = layers.map(l => {
+    return { el: l, depth: parseFloat(l.dataset.depth) || 0.12 };
+  });
+
+  // scroll-based parallax
+  function onScroll(){
+    const scrollY = window.scrollY || window.pageYOffset;
+    for(const info of layerInfos){
+      const depth = info.depth;
+      // subtle vertical translate based on scroll
+      info.el.style.transform = `translate(-50%, calc(-50% + ${scrollY * depth}px)) translateZ(${(depth* -200)}px)`;
+      // fade distant layers slightly
+      info.el.style.opacity = `${Math.max(0.35, 1 - Math.abs(scrollY * depth)/1200)}`;
+    }
+  }
+  window.addEventListener('scroll', onScroll, { passive:true });
+  onScroll();
+
+  // mouse move tilt in section
+  root.addEventListener('mousemove', (e)=>{
+    const rect = root.getBoundingClientRect();
+    const mx = (e.clientX - rect.left) / rect.width;
+    const my = (e.clientY - rect.top) / rect.height;
+
+    // card 3D tilt
+    const tiltX = (0.5 - my) * maxTilt;
+    const tiltY = (mx - 0.5) * maxTilt;
+    card.style.transform = `rotateX(${tiltX}deg) rotateY(${tiltY}deg) translateZ(0)`;
+
+    // give each layer a parallax offset
+    for(const info of layerInfos){
+      const moveX = (mx - 0.5) * 60 * info.depth;
+      const moveY = (my - 0.5) * 40 * info.depth;
+      info.el.style.transform = `translate(calc(-50% + ${moveX}px), calc(-50% + ${moveY}px + ${window.scrollY * info.depth}px)) translateZ(${(info.depth*-200)}px)`;
+    }
+  });
+
+  // reset tilt when leaving
+  root.addEventListener('mouseleave', ()=>{
+    card.style.transform = `rotateX(0deg) rotateY(0deg)`;
+    for(const info of layerInfos){
+      info.el.style.transform = `translate(-50%,-50%) translateZ(${(info.depth*-200)}px)`;
+    }
+  });
+})();
+
+/* ============================
+   SUBTLE AUTOSCROLL HINT (optional)
+   - small nudge animation on hint text for user discoverability
+============================ */
+(function(){
+  const hint = document.getElementById('ncHint');
+  if(!hint) return;
+  hint.animate([
+    { transform: 'translateY(0px)', opacity: 0.95 },
+    { transform: 'translateY(6px)', opacity: 0.6 },
+    { transform: 'translateY(0px)', opacity: 0.95 }
+  ], {
+    duration: 2200,
+    iterations: Infinity,
+    easing: 'ease-in-out'
+  });
+})();
+
+</script>
+
+<!-- WHY WORK WITH US -->
+<section id="why-work">
+  <h2>Why Work With Us</h2>
+  <div class="cards">
+    <div class="card fade"><img src="https://img.icons8.com/ios-filled/100/ffffff/innovation.png" alt="Innovation"><h3>Innovation</h3><p>Work on cutting-edge projects and technologies.</p></div>
+    <div class="card fade"><img src="../assets/growth.jpeg" alt="Growth"><h3>Growth</h3><p>Enhance your career with continuous learning.</p></div>
+    <div class="card fade"><img src="https://img.icons8.com/ios-filled/100/ffffff/teamwork.png" alt="Teamwork"><h3>Teamwork</h3><p>Collaborate with a professional and motivated team.</p></div>
+  </div>
+</section>
+
+<!-- CURRENT OPENINGS -->
+<section id="current-jobs">
+  <h2>Current Openings</h2>
+  
+  <div class="job-cards">
+
+    <a href="contact.html" class="job-link">
+      <div class="job-card anim-fade">
+        <img src="../assets/softwaredeveloper.webp" alt="Software Developer">
+        <h3>Software Developer</h3>
+        <p>Develop modern applications and solutions.</p>
+      </div>
+    </a>
+
+    <a href="contact.html" class="job-link">
+      <div class="job-card anim-fade">
+        <img src="../assets/Digital Marketer.gif" alt="Digital Marketer">
+        <h3>Digital Marketer</h3>
+        <p>Drive digital campaigns and strategies.</p>
+      </div>
+    </a>
+
+    <a href="contact.html" class="job-link">
+      <div class="job-card anim-fade">
+        <img src="../assets/hr.webp" alt="HR Executive">
+        <h3>HR Executive</h3>
+        <p>Manage recruitment and employee engagement.</p>
+      </div>
+    </a>
+
+    <a href="contact.html" class="job-link">
+      <div class="job-card anim-fade">
+        <img src="../assets/designer.gif" alt="Designer">
+        <h3>Designer</h3>
+        <p>Create visual designs for products and campaigns.</p>
+      </div>
+    </a>
+
+    <a href="contact.html" class="job-link">
+      <div class="job-card anim-fade">
+        <img src="../assets/manualtester.gif" alt="Performance Tester">
+        <h3>Performance Tester</h3>
+        <p>Ensure software meets quality standards.</p>
+      </div>
+    </a>
+
+    <a href="contact.html" class="job-link">
+      <div class="job-card anim-fade">
+        <img src="../assets/telecaller.gif" alt="Telecaller">
+        <h3>Telecaller</h3>
+        <p>Communicate effectively with clients and prospects.</p>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+
+<style>
+.job-link {
+  text-decoration: none;
+  color: inherit; 
+  display: block;
+}
+
+#current-jobs {
+  padding: 80px 10%;
+  background: #1B0B3B;
+  color: #E0E0E0;
+}
+
+#current-jobs h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #E0E0E0;
+  text-shadow: 0 0 10px #9C27B0;
+}
+
+/* Job cards container */
+.job-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Individual job card */
+.job-card {
+  background: #2E0E5E;
+  border-radius: 20px;
+  width: 280px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  box-shadow: 0 5px 15px rgba(156, 39, 176, 0.5);
+  overflow: hidden;
+}
+
+/* Reveal animation */
+.job-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.7s ease-out;
+}
+
+/* GIF styling */
+.job-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.5s ease, box-shadow 0.5s ease, filter 0.5s ease;
+  filter: drop-shadow(0 0 10px #9C27B0);
+}
+
+/* Hover effects */
+.job-card:hover img {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 20px #E040FB);
+}
+
+.job-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(156,39,176,0.7), 0 0 15px #E040FB;
+}
+
+/* Text */
+.job-card h3 {
+  margin: 15px 0 10px;
+  color: #E040FB;
+  text-shadow: 0 0 5px #9C27B0;
+}
+
+.job-card p {
+  color: #E0E0E0;
+  font-size: 0.95rem;
+}
+
+/* Fade animation class */
+.anim-fade {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-in-out;
+}
+
+/* Responsive */
+@media(max-width:768px){
+  .job-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+</style>
+
+<script>
+// Intersection Observer for fade-in effect
+const jobCards = document.querySelectorAll('.anim-fade');
+const jobObserver = new IntersectionObserver((entries, obs) => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add('visible');
+      obs.unobserve(entry.target);
+    }
+  });
+},{ threshold: 0.2 });
+
+jobCards.forEach(card => jobObserver.observe(card));
+</script>
+
+
+<!-- LIFE AT COMPANY -->
+<section id="life">
+  <h2>Life at Our Company</h2>
+  <div class="life-gallery">
+    <div class="life-card fade">
+      <img src="../assets/celebrations.jpeg" alt="Celebration">
+      <h3>Celebrations</h3>
+      <p>We celebrate milestones, festivals, and achievements together to foster a joyful work culture.</p>
+    </div>
+    <div class="life-card fade">
+      <img src="../assets/teamgames.jpeg" alt="Team Games">
+      <h3>Team Games</h3>
+      <p>Team-building activities and fun games that strengthen collaboration and communication.</p>
+    </div>
+    <div class="life-card fade">
+      <img src="../assets/feedback.jpeg" alt="Feedback">
+      <h3>Feedback & Workshops</h3>
+      <p>Regular feedback sessions and workshops to enhance skills and performance.</p>
+    </div>
+    <div class="life-card fade">
+      <img src="../assets/ofcfun.jpeg" alt="Office Fun">
+      <h3>Office Fun</h3>
+      <p>Open spaces, creative setups, and fun corners to keep the work environment lively.</p>
+    </div>
+  </div>
+</section>
+
+<!-- INTERNSHIP OPPORTUNITIES -->
+<section id="internships">
+  <h2>Internship Opportunities</h2>
+  <div class="cards">
+    <div class="card fade"><img src="https://img.icons8.com/ios-filled/100/ffffff/code.png" alt="Software Developer Intern"><h3>Software Developer Intern</h3><p>Hands-on learning experience on real projects.</p></div>
+    <div class="card fade"><img src="https://img.icons8.com/ios-filled/100/ffffff/megaphone.png" alt="Digital Marketing Intern"><h3>Digital Marketing Intern</h3><p>Learn the art of digital marketing campaigns.</p></div>
+    <div class="card fade"><img src="../assets/humanresource.jpeg" alt="HR Intern"><h3>HR Intern</h3><p>Assist in HR processes and employee engagement.</p></div>
+  </div>
+</section>
+<section id="hiring-steps">
+
+  <!-- hiring steps content  -->
+<div id="career-hiring-flow">
+  <canvas id="motion-canvas"></canvas>
+  <canvas id="glow-spheres"></canvas>
+
+  <section id="career-path">
+    <h2>Our Futuristic Hiring Flow 🌟</h2>
+    <div class="timeline-container">
+      
+      <div class="stepbox left-side">
+        <div class="circle-mark">1</div>
+        <div class="step-info">
+          <img src="../assets/resumescreening.jpg" alt="Resume">
+          <h3>Resume Screening</h3>
+          <p>We carefully analyze your skills and experience to match your strengths with RamChait’s opportunities.</p>
+        </div>
+      </div>
+
+      <div class="stepbox right-side">
+        <div class="circle-mark">2</div>
+        <div class="step-info">
+          <img src="../assets/interview.jpeg" alt="Interview">
+          <h3>Technical Interview</h3>
+          <p>Showcase your problem-solving, creativity, and technical expertise in our dynamic discussions.</p>
+        </div>
+      </div>
+
+      <div class="stepbox left-side">
+        <div class="circle-mark">3</div>
+        <div class="step-info">
+          <img src="../assets/onboarding.jpg" alt="Onboarding">
+          <h3>Offer & Onboarding</h3>
+          <p>Join our family with a smooth onboarding experience and connect with your amazing team.</p>
+        </div>
+      </div>
+
+      <div class="stepbox right-side">
+        <div class="circle-mark">4</div>
+        <div class="step-info">
+          <img src="../assets/growth.avif" alt="Training">
+          <h3>Training & Growth</h3>
+          <p>Empower your skills through continuous learning and mentorship from industry experts.</p>
+        </div>
+      </div>
+
+      <div class="stepbox left-side">
+        <div class="circle-mark">5</div>
+        <div class="step-info">
+          <img src="../assets/carrierprogression.webp" alt="Career Growth">
+          <h3>Career Progression</h3>
+          <p>Climb higher — our culture rewards innovation, leadership, and outstanding performance.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</div>
+
+<style>
+  /* 🌌 Futuristic Neon Blue Animated Background */
+@keyframes colorDrift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+#career-hiring-flow {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  color: #e0eaff;
+  background: linear-gradient(-45deg, #00111f, #001a33, #00264d, #003366);
+  background-size: 400% 400%;
+  animation: colorDrift 18s ease infinite;
+}
+
+/* 🪄 Canvas Effects */
+#career-hiring-flow #motion-canvas,
+#career-hiring-flow #glow-spheres {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* ✨ Career Path Section */
+#career-hiring-flow #career-path {
+  position: relative;
+  z-index: 2;
+  padding: 120px 5%;
+}
+
+#career-hiring-flow #career-path h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 80px;
+  background: linear-gradient(to right, #00d4ff, #6c63ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 25px rgba(0, 208, 255, 0.7);
+  letter-spacing: 1px;
+}
+
+/* 🧩 Timeline Line */
+#career-hiring-flow .timeline-container {
+  max-width: 960px;
+  margin: auto;
+  position: relative;
+}
+
+#career-hiring-flow .timeline-container::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(to bottom, #00d4ff, #6c63ff);
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(0, 208, 255, 0.5);
+  z-index: 1;
+}
+
+/* ⚡ Step Boxes */
+#career-hiring-flow .stepbox {
+  width: 50%;
+  position: relative;
+  margin-bottom: 120px;
+  opacity: 0;
+  transform: translateY(80px);
+  transition: all 1s ease;
+  z-index: 2;
+}
+
+#career-hiring-flow .left-side { left: 0; text-align: right; }
+#career-hiring-flow .right-side { left: 50%; text-align: left; }
+
+/* 🔷 Step Circles */
+#career-hiring-flow .circle-mark {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 48px;
+  height: 48px;
+  background: radial-gradient(circle at 30% 30%, #00eaff, #0047ab);
+  border: 2px solid #00f5ff;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  text-shadow: 0 0 10px #00eaff;
+  box-shadow: 0 0 25px rgba(0, 212, 255, 0.7), inset 0 0 10px rgba(0, 255, 255, 0.5);
+  z-index: 3;
+}
+
+/* 🧠 Step Info Cards */
+#career-hiring-flow .step-info {
+  display: inline-block;
+  background: rgba(0, 20, 40, 0.6);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  border-radius: 20px;
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  padding: 25px;
+  width: 80%;
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.2);
+  transition: 0.5s ease;
+  cursor: default;
+}
+
+#career-hiring-flow .step-info:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 0 40px rgba(0, 255, 255, 0.7);
+  border-color: rgba(0, 255, 255, 0.5);
+}
+
+#career-hiring-flow .step-info img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  filter: brightness(0.9) contrast(1.1);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+}
+
+#career-hiring-flow .step-info h3 {
+  margin-bottom: 10px;
+  color: #00d4ff;
+  font-weight: 600;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
+}
+
+#career-hiring-flow .step-info p {
+  color: #cfdfff;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* 🚀 Reveal Animation */
+#career-hiring-flow .stepbox.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  #career-hiring-flow .stepbox {
+    width: 100%;
+    left: 0;
+    text-align: center;
+  }
+
+  #career-hiring-flow .timeline-container::before {
+    display: none;
+  }
+
+  #career-hiring-flow .circle-mark {
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #career-hiring-flow .step-info {
+    width: 90%;
+  }
+}
+
+</style>
+<script>
+  // 🌀 Floating Particles
+const motionCanvas = document.getElementById("motion-canvas");
+const motionCtx = motionCanvas.getContext("2d");
+const glowCanvas = document.getElementById("glow-spheres");
+const glowCtx = glowCanvas.getContext("2d");
+
+motionCanvas.width = glowCanvas.width = innerWidth;
+motionCanvas.height = glowCanvas.height = innerHeight;
+
+const dots = Array.from({ length: 120 }, () => ({
+  x: Math.random() * motionCanvas.width,
+  y: Math.random() * motionCanvas.height,
+  r: Math.random() * 2 + 1,
+  dx: (Math.random() - 0.5) * 0.7,
+  dy: (Math.random() - 0.5) * 0.7,
+}));
+
+function animateDots() {
+  motionCtx.clearRect(0, 0, motionCanvas.width, motionCanvas.height);
+  dots.forEach((p) => {
+    motionCtx.beginPath();
+    motionCtx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+    motionCtx.fillStyle = "rgba(255,255,255,0.8)";
+    motionCtx.fill();
+    p.x += p.dx;
+    p.y += p.dy;
+    if (p.x < 0 || p.x > motionCanvas.width) p.dx *= -1;
+    if (p.y < 0 || p.y > motionCanvas.height) p.dy *= -1;
+  });
+  requestAnimationFrame(animateDots);
+}
+animateDots();
+
+// ✨ Glow Spheres
+const bubbles = Array.from({ length: 5 }, () => ({
+  x: Math.random() * glowCanvas.width,
+  y: Math.random() * glowCanvas.height,
+  r: Math.random() * 200 + 120,
+  color: `hsla(${Math.random() * 360}, 70%, 65%, 0.12)`,
+  dx: (Math.random() - 0.5) * 0.3,
+  dy: (Math.random() - 0.5) * 0.3,
+}));
+
+function animateBubbles() {
+  glowCtx.clearRect(0, 0, glowCanvas.width, glowCanvas.height);
+  bubbles.forEach((b) => {
+    const gradient = glowCtx.createRadialGradient(b.x, b.y, 0, b.x, b.y, b.r);
+    gradient.addColorStop(0, b.color);
+    gradient.addColorStop(1, "transparent");
+    glowCtx.fillStyle = gradient;
+    glowCtx.beginPath();
+    glowCtx.arc(b.x, b.y, b.r, 0, Math.PI * 2);
+    glowCtx.fill();
+    b.x += b.dx;
+    b.y += b.dy;
+    if (b.x < 0 || b.x > glowCanvas.width) b.dx *= -1;
+    if (b.y < 0 || b.y > glowCanvas.height) b.dy *= -1;
+  });
+  requestAnimationFrame(animateBubbles);
+}
+animateBubbles();
+
+// 🎯 Scroll Reveal
+const allSteps = document.querySelectorAll(".stepbox");
+const stepObserver = new IntersectionObserver(
+  (entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+        observer.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.3 }
+);
+allSteps.forEach((step) => stepObserver.observe(step));
+
+window.addEventListener("resize", () => {
+  motionCanvas.width = glowCanvas.width = innerWidth;
+  motionCanvas.height = glowCanvas.height = innerHeight;
+});
+
+</script>
+
+<section id="why-not-you">
+  <div class="container">
+    <h2>Why Not You?</h2>
+    <p class="motivation">
+      Every journey begins with a single step. You have dreams, ambitions, and skills that are uniquely yours. 
+      The world is full of opportunities waiting for someone to seize them — why not you? 
+      The challenges you face today are shaping the strength you'll carry tomorrow. 
+      Believe in your potential, embrace the unknown, and trust that your hard work will pay off. 
+      Great achievements are not reserved for others; they are meant for those who dare to try, who refuse to give up, 
+      and who rise every time they fall. Take that step forward. Learn, grow, and shine. 
+      Ask yourself daily: "If not me, then who? If not now, then when?"
+    </p>
+    <p class="motivation">
+      You are capable of more than you realize. Each failure is a lesson, each success a milestone. 
+      Surround yourself with positivity, fuel your passion with perseverance, and let your determination guide you. 
+      Doors will open for those who are willing to knock relentlessly. Remember, extraordinary journeys start with ordinary steps, 
+      and the extraordinary is waiting for you — all you need is courage, vision, and action. 
+      So take a deep breath, stand tall, and step into your potential. The world is ready for you — why not you?
+    </p>
+    <!-- Floating circles -->
+    <div class="circle c1"></div>
+    <div class="circle c2"></div>
+    <div class="circle c3"></div>
+  </div>
+</section>
+
+<style>
+/* WHY NOT YOU - Modern Style */
+#why-not-you {
+  background: linear-gradient(135deg, #1B0B3B, #2E0E5E);
+  color: #FFF8DC;
+  padding: 100px 5%;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+#why-not-you h2 {
+  font-size: 3rem;
+  margin-bottom: 50px;
+  background: linear-gradient(90deg, #FFD700, #FF4500);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 15px rgba(255, 215, 0, 0.7);
+  animation: fadeInUp 1s ease forwards;
+}
+
+#why-not-you .motivation {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 30px auto;
+  opacity: 0;
+  transform: translateY(50px);
+  text-shadow: 0 0 8px rgba(255, 255, 224, 0.6);
+  animation: fadeInUp 1s ease forwards;
+}
+
+#why-not-you .motivation:nth-of-type(1) { animation-delay: 0.3s; }
+#why-not-you .motivation:nth-of-type(2) { animation-delay: 0.6s; }
+
+/* Floating circles for dynamic effect */
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.15;
+  animation: float 8s ease-in-out infinite;
+}
+.c1 { width: 120px; height: 120px; background: #FFD700; top: 10%; left: 5%; animation-delay: 0s; }
+.c2 { width: 80px; height: 80px; background: #FF4500; top: 40%; right: 10%; animation-delay: 2s; }
+.c3 { width: 100px; height: 100px; background: #FF69B4; bottom: 20%; left: 30%; animation-delay: 4s; }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) translateX(0); }
+  50% { transform: translateY(-30px) translateX(20px); }
+}
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media(max-width:768px){
+  #why-not-you h2 { font-size: 2.2rem; }
+  #why-not-you .motivation { font-size: 1rem; margin: 20px auto; }
+  .circle { display: none; }
+}
+</style>
+
+<!-- ACHIEVEMENTS / STATS -->
+<section id="achievements">
+  <h2>Our Achievements</h2>
+  <div class="stats">
+    <div class="stat fade"><img src="https://img.icons8.com/ios-filled/100/ffffff/project.png" alt="Projects Completed"><h3 class="counter" data-target="150">0</h3><p>Projects Completed</p></div>
+    <div class="stat fade"><img src="https://img.icons8.com/ios-filled/100/ffffff/handshake.png" alt="Happy Clients"><h3 class="counter" data-target="120">0</h3><p>Happy Clients</p></div>
+    <div class="stat fade"><img src="https://img.icons8.com/ios-filled/100/ffffff/trophy.png" alt="Awards Won"><h3 class="counter" data-target="25">0</h3><p>Awards Won</p></div>
+  </div>
+</section>
+
+<script>
+  // Fade-in elements on scroll
+  const faders = document.querySelectorAll('.fade');
+  const appearOptions = { threshold:0.2, rootMargin:"0px 0px -50px 0px" };
+  const appearOnScroll = new IntersectionObserver((entries, observer)=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){
+        entry.target.classList.add('visible'); 
+        observer.unobserve(entry.target);
+      }
+    });
+  }, appearOptions);
+  faders.forEach(fader => appearOnScroll.observe(fader));
+
+  // Animated Counters
+  const counters = document.querySelectorAll('.counter');
+  counters.forEach(counter=>{
+    counter.innerText='0';
+    const updateCounter = ()=>{
+      const target = +counter.getAttribute('data-target');
+      const c = +counter.innerText;
+      const increment = target/200;
+      if(c < target){ counter.innerText=`${Math.ceil(c+increment)}`; setTimeout(updateCounter,10); }
+      else { counter.innerText = target; }
+    };
+    updateCounter();
+  });
+
+  // PARTICLES ANIMATION
+  const canvas = document.getElementById('particles');
+  const ctx = canvas.getContext('2d');
+  canvas.width = window.innerWidth; canvas.height = window.innerHeight;
+  const particlesArray = [];
+  class Particle {
+    constructor(){ this.x=Math.random()*canvas.width; this.y=Math.random()*canvas.height; this.size=Math.random()*3+1; this.speedX=Math.random()*1-0.5; this.speedY=Math.random()*1-0.5; }
+    update(){ this.x+=this.speedX; this.y+=this.speedY; if(this.x>canvas.width)this.x=0;if(this.x<0)this.x=canvas.width;if(this.y>canvas.height)this.y=0;if(this.y<0)this.y=canvas.height; }
+    draw(){ ctx.fillStyle='rgba(156,39,176,0.6)'; ctx.beginPath(); ctx.arc(this.x,this.y,this.size,0,Math.PI*2); ctx.fill(); }
+  }
+  function initParticles(){ for(let i=0;i<100;i++){ particlesArray.push(new Particle()); } }
+  function animateParticles(){ ctx.clearRect(0,0,canvas.width,canvas.height); particlesArray.forEach(p=>{ p.update(); p.draw(); }); requestAnimationFrame(animateParticles); }
+  initParticles(); animateParticles();
+  window.addEventListener('resize',()=>{ canvas.width=window.innerWidth; canvas.height=window.innerHeight; });
+</script>
+
+
+
+<section class="new-contact-section" id="contact">
+    <div class="rotating-ring ring1"></div>
+    <div class="rotating-ring ring2"></div>
+
+    <div class="contact-content">
+        <!-- Left: Quick Links -->
+        <div class="quick-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#home"><span>🏠</span><span>Home</span></a></li>
+                <li><a href="about.html"><span>ℹ️</span><span>About</span></a></li>
+                <li><a href="ourservices.html"><span>💼</span><span>Our-Services</span></a></li>
+                <li><a href="portfolio.html"><span>🖼️</span><span>Portfolio</span></a></li>
+                <li><a href="careers.html"><span>🎯</span><span>Careers</span></a></li>
+                <li><a href="blog.html"><span>📝</span><span>Blog</span></a></li>
+                <li><a href="contact.html"><span>✉️</span><span>Contact</span></a></li>
+
+            </ul>
+        </div>
+
+        <!-- Center: Contact Info -->
+        <div class="contact-container">
+            <h2 class="contact-title">Get in Touch</h2>
+            <p class="contact-subtitle">We are ready to build something amazing with you!</p>
+
+            <div class="contact-info">
+                    <p><strong>Email:</strong> hr@ramchaittechnologies.com</p>
+                    <p><strong>Phone:</strong> +91-9441308275</p>
+                </div>
+
+            <a href="contact.html" class="contact-button">Contact Us Now</a>
+        </div>
+
+        <!-- Right: Social Media -->
+        <div class="social-media">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61580376749179" target="_blank"><img src="https://img.icons8.com/fluency/48/facebook-new.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/ramchaittechnologiespvtltd/" target="_blank"><img src="https://img.icons8.com/fluency/48/instagram-new.png" alt="Instagram"></a>
+                    <a href="https://x.com/RamchaitTechno" target="_blank"><img src="https://img.icons8.com/fluency/48/twitterx.png" alt="Twitter"></a>
+                    <a href="https://www.linkedin.com/company/ramchaittechnologies/posts/?feedView=all" target="_blank"><img src="https://img.icons8.com/fluency/48/linkedin.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <script src="services.js"></script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

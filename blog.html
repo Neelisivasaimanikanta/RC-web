@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services of RC</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/favicon.png">
+
+  <link rel="stylesheet" href="services.css">
+  <style>
+    :root{
+      --card-bg: radial-gradient(1200px 600px at 10% 10%, hsl(210 80% 60%/.25), transparent 50%),
+                 radial-gradient(1000px 800px at 90% 120%, hsl(280 80% 55%/.25), transparent 50%),
+                 linear-gradient(135deg, hsl(220 25% 10%), hsl(220 25% 14%));
+      --accent: hsl(199 90% 55%);
+      --text: hsl(0 0% 98%);
+      --muted: hsl(220 10% 70%);
+    }
+
+    *{box-sizing:border-box; margin:0; padding:0;}
+    body{
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Inter, "Helvetica Neue", Arial;
+      background: linear-gradient(120deg, #0e1117, #0b0f16 60%, #0e1117);
+      color:var(--text);
+    }
+
+    /* Grid Blog Section */
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+      gap:22px;
+      width:min(1100px, 92vw);
+      margin: 60px auto;
+    }
+
+    .card{
+      --radius:22px;
+      position:relative;
+      display:block;
+      padding:20px;
+      border-radius:var(--radius);
+      text-decoration:none;
+      color:inherit;
+      background:var(--card-bg);
+      overflow:hidden;
+      isolation:isolate;
+      min-height:300px;
+      transition: transform .35s cubic-bezier(.2,.8,.2,1), box-shadow .35s cubic-bezier(.2,.8,.2,1);
+      box-shadow: 0 10px 30px hsl(0 0% 0%/.25);
+      border:1px solid hsl(210 20% 98%/.06);
+    }
+
+    .card:hover{
+      transform: translateY(-6px) rotateX(2deg) rotateY(-2deg);
+      box-shadow: 0 18px 50px hsl(199 100% 50%/.22);
+    }
+
+    .card img{
+      width:100%;
+      height:180px;
+      object-fit:cover;
+      border-radius:14px;
+      margin-bottom:16px;
+    }
+
+    .title{
+      margin:.5rem 0;
+      line-height:1.15;
+      font-weight:800;
+      font-size:1.25rem;
+    }
+    .desc{
+      margin:0;
+      color: hsl(220 14% 80%);
+      line-height:1.55;
+    }
+    .more {
+      display:inline-block;
+      margin-top:8px;
+      color: var(--accent);
+      font-weight:600;
+      cursor:pointer;
+    }
+
+    /* Contact Section */
+    .new-contact-section {
+      position: relative;
+      padding: 60px 20px;
+      text-align: center;
+      background: #111827;
+      color: white;
+    }
+
+    .contact-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 30px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .quick-links ul {
+      list-style: none;
+      padding: 0;
+    }
+    .quick-links ul li {
+      margin: 8px 0;
+    }
+    .quick-links ul li a {
+      text-decoration: none;
+      color: white;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .contact-container {
+      flex: 1;
+    }
+    .contact-title {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    .contact-subtitle {
+      margin-bottom: 20px;
+    }
+    .contact-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background: var(--accent);
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+
+    .social-icons a img {
+      margin: 5px;
+      transition: transform .3s;
+    }
+    .social-icons a img:hover {
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+     <a href="#" class="logo" style="display:flex; align-items:center; text-decoration:none;">
+  <img src="/favicon.ico" alt="Ramchait Technologies Logo" style="height:50px; margin-right:8px;">
+  <span>Ramchait Technologies</span>
+</a>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+    <div class="menu" id="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="has-submenu">
+          <a href="ourservices.html" id="submenuToggle">Our Services &#9662;</a>
+          <div class="submenu" id="submenu">
+            <a href="web-development.html">Web Development</a>
+            <a href="digital-marketing.html">Digital Marketing</a>
+            <a href="consulting.html">Consulting Services</a>
+            <a href="manualtesting.html">Manual Testing</a>
+          </div>
+        </li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Blog Cards -->
+  <section class="grid">
+    <a class="card" href="facebookblog.html">
+      <img src="assets/facebook-ads.png" alt="Facebook Ads Blog Thumbnail" />
+      <h3 class="title">Facebook Ads Strategies</h3>
+      <p class="desc">
+        Learn how to create high-converting Facebook Ads campaigns that maximize reach, optimize budget, and drive real business growth.
+        <span class="more">Know More...</span>
+      </p>
+    </a>
+
+    <a class="card" href="digitalmarketingblog.html">
+      <img src="assets/Best_digital_marketing_course[1].png" alt="Digital Marketing Blog Thumbnail" />
+      <h3 class="title">Complete Digital Marketing Guide</h3>
+      <p class="desc">
+        Discover modern digital marketing techniques including SEO, content strategy, paid ads, and analytics to scale your online presence.
+        <span class="more">Know More...</span>
+      </p>
+    </a>
+    
+    <a class="card" href="webdevelopmentblog.html">
+  <img src="../assets/webdevelopmentblog.jpg" alt="Web Development 2025 Blog Thumbnail" />
+  <h3 class="title">Webdevelopment in 2025 — The Future of Digital Innovation</h3>
+  <p class="desc">
+    Explore how artificial intelligence, Web3, and immersive technologies are redefining the web in 2025 and beyond.
+    <span class="more">Know More...</span>
+  </p>
+</a>
+
+<a class="card" href="digitalmarketingservices.html">
+  <img src="../assets/digitalmarketingservices.jpeg" 
+       alt="digitalmarketingservices" />
+  <h3 class="title">Digital Marketing Services — The Ultimate 2025 Guide</h3>
+  <p class="desc">
+    Discover how SEO, social media, and AI-powered strategies are driving business growth in 2025.
+    <span class="more">Know More...</span>
+  </p>
+</a>
+
+
+  </section>
+
+  <!-- Contact Section -->
+  <section class="new-contact-section" id="contact">
+    <div class="contact-content">
+      <!-- Left: Quick Links -->
+      <div class="quick-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home"><span>🏠</span><span>Home</span></a></li>
+                <li><a href="about.html"><span>ℹ️</span><span>About</span></a></li>
+                <li><a href="ourservices.html"><span>💼</span><span>Our-Services</span></a></li>
+                <li><a href="portfolio.html"><span>🖼️</span><span>Portfolio</span></a></li>
+                <li><a href="careers.html"><span>🎯</span><span>Careers</span></a></li>
+                <li><a href="blog.html"><span>📝</span><span>Blog</span></a></li>
+                <li><a href="contact.html"><span>✉️</span><span>Contact</span></a></li>
+
+        </ul>
+      </div>
+
+      <!-- Center: Contact Info -->
+      <div class="contact-container">
+        <h2 class="contact-title">Get in Touch</h2>
+        <p class="contact-subtitle">We are ready to build something amazing with you!</p>
+        <div class="contact-info">
+          <p><strong>Email:</strong> hr@ramchaittechnologies.com</p>
+          <p><strong>Phone:</strong> +91-9441308275</p>
+        </div>
+        <a href="contact.html" class="contact-button">Contact Us Now</a>
+      </div>
+
+      <!-- Right: Social Media -->
+      <div class="social-media">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/profile.php?id=61580376749179" target="_blank"><img src="https://img.icons8.com/fluency/48/facebook-new.png" alt="Facebook"></a>
+          <a href="https://www.instagram.com/ramchaittechnologiespvtltd/==" target="_blank"><img src="https://img.icons8.com/fluency/48/instagram-new.png" alt="Instagram"></a>
+          <a href="https://x.com/RamchaitTechno" target="_blank"><img src="https://img.icons8.com/fluency/48/twitterx.png" alt="Twitter"></a>
+          <a href="https://www.linkedin.com/company/ramchaittechnologies/posts/?feedView=all" target="_blank"><img src="https://img.icons8.com/fluency/48/linkedin.png" alt="LinkedIn"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="services.js"></script>
+</body>
+</html>

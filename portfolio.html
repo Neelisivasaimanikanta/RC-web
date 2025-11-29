@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Ramchait Technologies</title>
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="stylesheet" href="contact.css" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom right, #010615, #031926);
+      color: #fff;
+    }
+
+    .carousel-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(to bottom right, #010615, #031926);
+      position: relative;
+      z-index: 1;
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+
+    .carousel {
+      position: relative;
+      width: 90%;
+      max-width: 950px;
+      height: 520px;
+      border-radius: 20px;
+      overflow: hidden;
+      background: rgba(0, 255, 255, 0.05);
+      backdrop-filter: blur(16px);
+      border: 2px solid rgba(0, 255, 255, 0.2);
+      box-shadow: 0 0 40px rgba(0, 255, 255, 0.3), 0 0 80px rgba(0, 255, 255, 0.1) inset;
+      z-index: 5;
+      transition: 0.4s ease-in-out;
+    }
+
+    .carousel:hover {
+      box-shadow: 0 0 60px rgba(0, 255, 255, 0.5), 0 0 100px rgba(0, 255, 255, 0.2) inset;
+    }
+
+    .carousel a {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .carousel img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transform: scale(0.9) translateX(100px);
+      transition: all 1s ease;
+      z-index: 0;
+      filter: drop-shadow(0 0 20px rgba(0, 255, 255, 0.15));
+    }
+
+    .carousel img.active {
+      opacity: 1;
+      transform: scale(1) translateX(0);
+      z-index: 1;
+      animation: bounceIn 1s ease;
+    }
+
+    .carousel img:hover {
+      transform: scale(1.05);
+      filter: drop-shadow(0 0 40px rgba(0, 255, 255, 0.3));
+    }
+
+    .nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 255, 255, 0.1);
+      color: cyan;
+      font-size: 30px;
+      padding: 14px 18px;
+      cursor: pointer;
+      border-radius: 50%;
+      transition: background 0.4s ease;
+      z-index: 2;
+      user-select: none;
+      border: 1px solid rgba(0, 255, 255, 0.3);
+    }
+
+    .nav:hover {
+      background-color: rgba(0, 255, 255, 0.3);
+      color: #fff;
+    }
+
+    .nav.left { left: 20px; }
+    .nav.right { right: 20px; }
+
+    @keyframes bounceIn {
+      0% { transform: scale(0.9) translateY(20px); opacity: 0; }
+      60% { transform: scale(1.03) translateY(-10px); opacity: 1; }
+      100% { transform: scale(1) translateY(0); }
+    }
+
+    .particles {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .particles span {
+      position: absolute;
+      display: block;
+      width: 10px;
+      height: 10px;
+      background: cyan;
+      border-radius: 50%;
+      opacity: 0.1;
+      animation: float 10s linear infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(100vh) scale(0.5); }
+      100% { transform: translateY(-10vh) scale(1.2); }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+     <a href="#" class="logo" style="display:flex; align-items:center; text-decoration:none;">
+  <img src="/favicon.ico" alt="Ramchait Technologies Logo" style="height:50px; margin-right:8px;">
+  <span>Ramchait Technologies</span>
+</a>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+    <div class="menu" id="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="has-submenu">
+          <a href="ourservices.html" id="submenuToggle">Our Services &#9662;</a>
+          <div class="submenu" id="submenu">
+            <a href="web-development.html">Web Development</a>
+            <a href="digital-marketing.html">Digital Marketing</a>
+            <a href="consulting.html">Consulting Services</a>
+            <a href="manualtesting.html">Manual Testing</a>
+          </div>
+        </li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- 🌟 Ramchait IT Solutions Portfolio Section -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<section id="portfolio" class="ramchait-portfolio">
+  <div class="portfolio-header">
+    <h2 class="animate__animated animate__fadeInDown">🚀 Our Portfolio</h2>
+    <p class="animate__animated animate__fadeIn">Crafted innovations by Ramchait IT Solutions — powering business success.</p>
+  </div>
+
+  <div class="portfolio-grid">
+    <!-- Project 1 -->
+    <a href="https://srilakshmibhargavinursery.com/" target="_blank" class="portfolio-card animate__animated animate__fadeInUp">
+      <h3>🌱 GreenCommerce – Plant Nursery</h3>
+      <p><strong>Client:</strong> Bhargavi Nursery</p>
+      <ul>
+        <li>Full e-commerce with cart, WhatsApp support</li>
+        <li>Order tracking & responsive layout</li>
+        <li><strong>Result:</strong> 78% sales increase</li>
+      </ul>
+    </a>
+
+    <!-- Project 2 -->
+    <a href="https://3straininginstitute.in/" target="_blank" class="portfolio-card animate__animated animate__fadeInUp">
+      <h3>🏫 SkillForge – IT Training</h3>
+      <p><strong>Client:</strong> 3S Training Institute</p>
+      <ul>
+        <li>Courses listing, brochure downloads</li>
+        <li>Student login & feedback forms</li>
+        <li><strong>Result:</strong> 1000+ active students</li>
+      </ul>
+    </a>
+
+    <!-- Project 3 -->
+    <a href="https://mightyhills.in/" target="_blank" class="portfolio-card animate__animated animate__fadeInUp">
+      <h3>🌄 NatureStay – Resort Website</h3>
+      <p><strong>Client:</strong> Mighty Hills</p>
+      <ul>
+        <li>Photo gallery, SEO, booking ready</li>
+        <li>Built for speed and mobile use</li>
+        <li><strong>Result:</strong> 65% more direct bookings</li>
+      </ul>
+    </a>
+
+    <!-- Project 4 -->
+    <a href="https://santharamhospital.com/" target="_blank" class="portfolio-card animate__animated animate__fadeInUp">
+      <h3>🏥 CareConnect – Hospital Website</h3>
+      <p><strong>Client:</strong> Santharam Hospital</p>
+      <ul>
+        <li>Doctors list, appointment form, Google Maps</li>
+        <li>Clean UI for all devices</li>
+        <li><strong>Result:</strong> Higher patient engagement</li>
+      </ul>
+    </a>
+
+  </div>
+</section>
+
+<style>
+  .ramchait-portfolio {
+    padding: 70px 20px;
+    background: linear-gradient(to bottom right, #010615, #031926);
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .portfolio-header {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .portfolio-header h2 {
+    font-size: 2.5rem;
+    color: cyan;
+  }
+
+  .portfolio-header p {
+    color: #ccc;
+    margin-top: 10px;
+    font-size: 1.1rem;
+  }
+
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+  }
+
+  .portfolio-card {
+    background: rgba(0, 255, 255, 0.05);
+    border: 1px solid rgba(0, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    color: white;
+    text-decoration: none;
+  }
+
+  .portfolio-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+    background: rgba(0, 255, 255, 0.08);
+  }
+
+  .portfolio-card h3 {
+    color: cyan;
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+  }
+
+  .portfolio-card ul {
+    padding-left: 20px;
+    margin: 10px 0 0;
+  }
+
+  .portfolio-card ul li {
+    font-size: 0.95rem;
+    margin-bottom: 6px;
+    color: #ddd;
+  }
+
+  .portfolio-card p {
+    color: #ccc;
+    margin-bottom: 8px;
+  }
+
+  @media (max-width: 600px) {
+    .portfolio-header h2 {
+      font-size: 2rem;
+    }
+
+    .portfolio-header p {
+      font-size: 1rem;
+    }
+
+    .portfolio-card {
+      padding: 20px;
+    }
+
+    .portfolio-card h3 {
+      font-size: 1.2rem;
+    }
+
+    .portfolio-card ul li {
+      font-size: 0.88rem;
+    }
+  }
+</style>
+
+
+  <section class="carousel-section">
+  <div class="fixed-slider-container">
+    <a href="https://3straininginstitute.in/" target="_blank" class="slide active">
+      <img src="assets/WhatsApp Image 2025-07-10 at 15.31.19_1f027e93.jpg" alt="3S Training" />
+      <div class="caption">
+        <h2>3S Training Institute</h2>
+        <p>Top-notch IT training solutions.</p>
+      </div>
+    </a>
+
+    <a href="https://srilakshmibhargavinursery.com/" target="_blank" class="slide">
+      <img src="assets/WhatsApp Image 2025-07-10 at 15.31.20_bc2df5dd.jpg" alt="Bhargavi Nursery" />
+      <div class="caption">
+        <h2>Bhargavi Nursery</h2>
+        <p>Beautify your world with green.</p>
+      </div>
+    </a>
+
+    <a href="https://mightyhills.in/" target="_blank" class="slide">
+      <img src="assets/WhatsApp Image 2025-07-10 at 13.27.13_5a1c2f6c.jpg" alt="Mighty Hills" />
+      <div class="caption">
+        <h2>Mighty Hills</h2>
+        <p>Luxury resorts in nature's lap.</p>
+      </div>
+    </a>
+
+    <a href="https://santharamhospital.com/" target="_blank" class="slide">
+      <img src="assets/WhatsApp Image 2025-07-10 at 15.31.20_d41ad6c0.jpg" alt="Santharam Hospital" />
+      <div class="caption">
+        <h2>Santharam Hospital</h2>
+        <p>Compassionate & modern healthcare.</p>
+      </div>
+    </a>
+    
+    <!-- Project 5 -->
+     <a href="https://jayalakshmisteels.com/" target="_blank" class="slide">
+      <img src="assets/jayast.png" alt="JayaLakshmi Steels" />
+      <div class="caption">
+        <h2>JayaLakshmi Steels</h2>
+        <p>Quality steel products for every need.</p>
+      </div>
+    </a>
+    
+    <!-- Project 6 -->
+    <a href="https://bhanuschoolsandcolleges.com/" target="_blank" class="slide">
+      <img src="assets/bhlogo-e1737012289596.png" alt="Bhanus Schools and Colleges" />
+      <div class="caption">
+        <h2>Bhanus Schools and Colleges</h2>
+        <p>Empowering education for a brighter future.</p>
+      </div>
+    </a>
+  </div>
+
+  <style>
+    .carousel-section {
+      background: linear-gradient(to bottom right, #010615, #031926);
+      padding: 60px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .fixed-slider-container {
+      position: relative;
+      width: 100%;
+      max-width: 700px;
+      height: 500px;
+      overflow: hidden;
+      border-radius: 20px;
+      border: 2px solid rgba(0, 255, 255, 0.2);
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+    }
+
+    .slide {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0, 255, 255, 0.03);
+      padding: 10px;
+      text-decoration: none;
+    }
+
+    .slide.active {
+      opacity: 1;
+      z-index: 1;
+    }
+
+    .slide img {
+      max-height: 320px;
+      width: auto;
+      max-width: 100%;
+      object-fit: contain;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+
+    .caption {
+      text-align: center;
+      color: #fff;
+      padding: 10px 20px;
+    }
+
+    .caption h2 {
+      margin: 10px 0 5px;
+      font-size: 1.5rem;
+      color: cyan;
+    }
+
+    .caption p {
+      font-size: 1rem;
+      color: #ccc;
+    }
+
+    @media (max-width: 600px) {
+      .fixed-slider-container {
+        height: 420px;
+      }
+
+      .caption h2 {
+        font-size: 1.2rem;
+      }
+
+      .caption p {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    let index = 0;
+
+    function showSlide(i) {
+      slides.forEach((slide, idx) => {
+        slide.classList.remove('active');
+        if (idx === i) slide.classList.add('active');
+      });
+    }
+
+    setInterval(() => {
+      index = (index + 1) % slides.length;
+      showSlide(index);
+    }, 2000); // 2 seconds
+  </script>
+</section>
+
+
+<section class="portfolio-story-section" id="portfolio">
+  <div class="portfolio-intro">
+    <h2>💡 From Vision to Value</h2>
+    <p>We don't just build websites and apps — we architect experiences and engineer outcomes. Here’s how Ramchait IT Solutions has turned client dreams into digital realities.</p>
+  </div>
+
+  <div class="project-timeline">
+
+    <div class="timeline-entry">
+      <span class="year">2022</span>
+      <div class="details">
+        <h3>🌱 Greening India with Bhargavi Nursery</h3>
+        <p>Transformed a traditional plant nursery into a full-fledged online marketplace. Built a dynamic website with real-time inventory, plant care tips, and logistics integration. The result? Over 10,000 plant deliveries in just 4 months.</p>
+      </div>
+    </div>
+
+    <div class="timeline-entry">
+      <span class="year">2023</span>
+      <div class="details">
+        <h3>📚 Reimagining IT Education with 3S Training</h3>
+        <p>Designed an interactive training platform that supports live classes, certifications, and performance analytics. 3S now hosts 1500+ students monthly and expanded across 4 cities.</p>
+      </div>
+    </div>
+
+    <div class="timeline-entry">
+      <span class="year">2023</span>
+      <div class="details">
+        <h3>🏞️ Nature Meets Luxury with Mighty Hills</h3>
+        <p>Developed a seamless booking experience for a luxury eco-resort. Integrated 360° tours, seasonal offers, and WhatsApp automation. Bookings doubled within 2 months post-launch.</p>
+      </div>
+    </div>
+
+    <div class="timeline-entry">
+      <span class="year">2024</span>
+      <div class="details">
+        <h3>🏥 Digital Health Revolution with Santharam Hospital</h3>
+        <p>Created a patient-first digital interface for appointments, reports, and telemedicine. Enabled 24/7 access to care and reduced walk-in wait times by 65%.</p>
+      </div>
+    </div>
+
+    <div class="timeline-entry">
+      <span class="year">2025</span>
+      <div class="details">
+        <h3>🚀 Scaling Startups with Ramchait LaunchPad</h3>
+        <p>Our latest initiative: a tailored package to help startups build MVPs fast. From branding to deployment, we’ve helped 12 startups go live in under 90 days.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+  .portfolio-story-section {
+    background: linear-gradient(to bottom right, #010615, #031926);
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    padding: 80px 20px;
+  }
+
+  .portfolio-intro {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  .portfolio-intro h2 {
+    font-size: 2.5rem;
+    color: cyan;
+    margin-bottom: 10px;
+  }
+
+  .portfolio-intro p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: #ccc;
+  }
+
+  .project-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .timeline-entry {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .timeline-entry .year {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: cyan;
+    min-width: 70px;
+  }
+
+  .timeline-entry .details h3 {
+    margin: 0 0 10px;
+    font-size: 1.3rem;
+    color: #00ffff;
+  }
+
+  .timeline-entry .details p {
+    margin: 0;
+    color: #ddd;
+    font-size: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    .timeline-entry {
+      flex-direction: column;
+    }
+
+    .timeline-entry .year {
+      font-size: 1.2rem;
+    }
+
+    .timeline-entry .details h3 {
+      font-size: 1.1rem;
+    }
+  }
+</style>
+
+
+<section class="ramchait-spotlight">
+  <div class="spotlight-header">
+    <h2>✨ Our Digital Footprint</h2>
+    <p>We're not just developers — we’re transformation partners across industries.</p>
+  </div>
+
+  <div class="spotlight-content">
+    <div class="big-highlight">
+      <h3>125+ Digital Projects Delivered</h3>
+      <p>Across education, healthcare, hospitality, e-commerce, and beyond.</p>
+    </div>
+
+    <div class="spotlight-blocks">
+      <div>
+        <h4>🌱 Bhargavi Nursery</h4>
+        <p>Built a full e-commerce plant nursery with online payment, tracking & WhatsApp chatbot.</p>
+      </div>
+      <div>
+        <h4>📚 3S Training Institute</h4>
+        <p>Created a modern LMS with Zoom integration, certificate generator, and a responsive portal.</p>
+      </div>
+      <div>
+        <h4>🏞 Mighty Hills</h4>
+        <p>Designed a resort booking site with 360° views, instant booking & AI seasonal pricing.</p>
+      </div>
+      <div>
+        <h4>🏥 Santharam Hospital</h4>
+        <p>Built a hospital website with health record uploads, appointment booking & SMS alerts.</p>
+      </div>
+      <div>
+        <h4>JayaLakshmi Steels</h4>
+        <p>Built a steel industry website with product catalog, inquiry forms & dealer login.</p>
+      </div>
+
+      <div>
+        <h4>Bhanus Schools and Colleges</h4>
+        <p>Built a school and college management system with student enrollment, attendance tracking & online classes.</p>
+      </div>
+    </div>
+
+    <div class="spotlight-achievements">
+      <h3>🔥 Trusted by 30+ Startups & SMEs</h3>
+      <p>Helping brands go digital with world-class web, mobile & marketing solutions.</p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .ramchait-spotlight {
+    background: linear-gradient(to bottom right, #010615, #031926);
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    padding: 80px 20px;
+    text-align: center;
+  }
+
+  .spotlight-header h2 {
+    font-size: 2.5rem;
+    color: cyan;
+    margin-bottom: 10px;
+  }
+
+  .spotlight-header p {
+    color: #ccc;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+  }
+
+  .big-highlight {
+    background: rgba(0, 255, 255, 0.05);
+    padding: 30px;
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    margin-bottom: 50px;
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
+  }
+
+  .big-highlight h3 {
+    color: #00ffff;
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  .spotlight-blocks {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+    text-align: left;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .spotlight-blocks div {
+    background: rgba(255, 255, 255, 0.02);
+    padding: 20px;
+    border-left: 4px solid cyan;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+
+  .spotlight-blocks div:hover {
+    transform: translateY(-5px);
+    background: rgba(0, 255, 255, 0.05);
+  }
+
+  .spotlight-blocks h4 {
+    color: #00ffe7;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+
+  .spotlight-blocks p {
+    color: #ccc;
+    font-size: 1rem;
+  }
+
+  .spotlight-achievements h3 {
+    font-size: 1.8rem;
+    color: #00ffff;
+  }
+
+  .spotlight-achievements p {
+    color: #aaa;
+    margin-top: 10px;
+    font-size: 1.1rem;
+  }
+
+  @media (max-width: 768px) {
+    .spotlight-header h2 {
+      font-size: 2rem;
+    }
+
+    .big-highlight h3 {
+      font-size: 1.6rem;
+    }
+
+    .spotlight-achievements h3 {
+      font-size: 1.5rem;
+    }
+  }
+</style>
+
+
+
+
+  <!-- Footer Contact Section -->
+  <section class="new-contact-section" id="contact">
+    <div class="rotating-ring ring1"></div>
+    <div class="rotating-ring ring2"></div>
+
+    <div class="contact-content">
+      <div class="quick-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home"><span>🏠</span><span>Home</span></a></li>
+                <li><a href="about.html"><span>ℹ️</span><span>About</span></a></li>
+                <li><a href="ourservices.html"><span>💼</span><span>Our-Services</span></a></li>
+                <li><a href="portfolio.html"><span>🖼️</span><span>Portfolio</span></a></li>
+                <li><a href="careers.html"><span>🎯</span><span>Careers</span></a></li>
+                <li><a href="blog.html"><span>📝</span><span>Blog</span></a></li>
+                <li><a href="contact.html"><span>✉️</span><span>Contact</span></a></li>
+
+        </ul>
+      </div>
+
+      <div class="contact-container">
+        <h2 class="contact-title">Get in Touch</h2>
+        <p class="contact-subtitle">We are ready to build something amazing with you!</p>
+        <div class="contact-info">
+          <p><strong>Email:</strong> hr@ramchaittechnologies.com</p>
+          <p><strong>Phone:</strong> +91-9441308275</p>
+        </div>
+        <a href="contact.html" class="contact-button">Contact Us Now</a>
+      </div>
+
+      <div class="social-media">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/profile.php?id=61580376749179" target="_blank"><img src="https://img.icons8.com/fluency/48/facebook-new.png" alt="Facebook"></a>
+          <a href="https://www.instagram.com/ramchaittechnologiespvtltd/" target="_blank"><img src="https://img.icons8.com/fluency/48/instagram-new.png" alt="Instagram"></a>
+          <a href="https://x.com/RamchaitTechno" target="_blank"><img src="https://img.icons8.com/fluency/48/twitterx.png" alt="Twitter"></a>
+          <a href="https://www.linkedin.com/company/ramchaittechnologies/posts/?feedView=all" target="_blank"><img src="https://img.icons8.com/fluency/48/linkedin.png" alt="LinkedIn"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Want to grow your brand online? Our best digital marketing services in Andhrapradesh help you reach the right audience, generate quality leads, and maximize ROI with performance.">
+    <title>Best Digital Marketing Services in Andhrapradesh</title>
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/favicon.png">
+    <link rel="stylesheet" href="digitalmarketing.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+         <a href="#" class="logo" style="display:flex; align-items:center; text-decoration:none;">
+  <img src="/favicon.ico" alt="Ramchait Technologies Logo" style="height:50px; margin-right:8px;">
+  <span>Ramchait Technologies</span>
+</a>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+        <div class="menu" id="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="has-submenu">
+                    <a href="ourservices.html" id="submenuToggle">Our Services &#9662;</a>
+                    <div class="submenu" id="submenu">
+                        <a href="web-development.html">Web Development</a>
+                        <a href="digital-marketing.html">Digital Marketing</a>
+                        <a href="consulting.html">Consulting Services</a>
+                        <a href="manualtesting.html">Manual Testing</a>
+                    </div>
+                </li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    
+
+     
+
+    <section class="digital-marketing-section">
+    <h1 class="section-title">Best Digital Marketing Services in Andhrapradesh</h1>
+    <p class="section-subtitle">Boost your online presence with top-notch Digital Marketing Services in Andhrapradesh. We offer SEO, social media marketing, PPC, and content marketing to grow your business. Get expert strategies today!</p>
+</section>
+
+<section class="parallax-single-section">
+    <!-- Dark overlay for text readability -->
+    <div class="parallax-overlay"></div>
+
+    <!-- Full-size single image -->
+    <div class="parallax-image"></div>
+
+    <!-- Content -->
+    
+</section>
+
+<style>
+.parallax-single-section {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full section height */
+    overflow: hidden;
+    background: #2a1207; /* Dark reddish-brown */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Full-size image */
+.parallax-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url("../assets/Digital-Marketing-image-scaled.jpeg.jpg"); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.6s ease, filter 0.6s ease;
+    z-index: 1;
+}
+
+/* Dark overlay for readability */
+.parallax-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0); /* Increased opacity for better contrast */
+    top: 0;
+    left: 0;
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* Hover effect */
+.parallax-single-section:hover .parallax-image {
+    transform: scale(1.05);
+    filter: brightness(1.15);
+}
+
+/* Content */
+.parallax-single-content {
+    position: relative;
+    z-index: 3;
+    color: #fbeee6;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    animation: fadeInUp 1.5s ease forwards;
+
+    /* Optional semi-transparent background behind text */
+    background: rgba(0, 0, 0, 0.35);
+    padding: 20px 40px;
+    border-radius: 15px;
+}
+
+.parallax-single-content h2 {
+    font-size: 3.2rem;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 12px rgba(0,0,0,0.8); /* Stronger shadow */
+}
+
+.parallax-single-content p {
+    font-size: 1.3rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.8); /* Stronger shadow */
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(50px);}
+    100% { opacity: 1; transform: translateY(0);}
+}
+
+/* Responsive */
+@media(max-width: 1024px) {
+    .parallax-single-section { height: 500px; }
+    .parallax-single-content h2 { font-size: 2.6rem; }
+    .parallax-single-content p { font-size: 1.1rem; padding: 15px 25px; }
+}
+
+@media(max-width: 480px) {
+    .parallax-single-section { height: 400px; }
+    .parallax-single-content h2 { font-size: 2rem; }
+    .parallax-single-content p { font-size: 0.9rem; padding: 10px 20px; }
+}
+</style>
+
+
+<section class="digital-marketing-section">
+    <h2 class="section-title">Our Digital Marketing Solutions</h2>
+    <div class="services-grid">
+        <div class="marketing-wrapper">
+        <div class="service-navigation" id="serviceList"></div>
+        <div class="service-display" id="serviceView"></div>
+    </div>
+        
+    </div>
+</section>
+
+<section id="rectangle-slider" class="rectangle-slider-section">
+    <h2 class="rectangle-slider-title">Our Services Showcase</h2>
+    <div class="rectangle-slider-container">
+        <div class="rectangle-slider-track">
+
+            <div class="rectangle-slide"><img src="../assets/social media.jpg" alt="Tech 1"></div>
+            <div class="rectangle-slide"><img src ="../assets/dddmmm.jpeg" alt="Tech 4"></div>
+            <div class="rectangle-slide"><img src="../assets/marketing digital.jpg" alt="Tech 2"></div>
+            <div class="rectangle-slide"><img src ="../assets/ddmm.jpeg" alt="Tech 4"></div>
+            <div class="rectangle-slide"><img src="../assets/digital marketing image.jpg" alt="Tech 3"></div>
+            <div class="rectangle-slide"><img src ="../assets/ddddmmmm.jpeg" alt="Tech 4"></div>
+            <div class="rectangle-slide"><img src="../assets/marketingg.jpg" alt="Tech 4"></div>
+            
+            <!-- Repeat for continuous scroll -->
+           <div class="rectangle-slide"><img src="../assets/social media.jpg" alt="Tech 1"></div>
+            <div class="rectangle-slide"><img src ="../assets/dddmmm.jpeg" alt="Tech 4"></div>
+            <div class="rectangle-slide"><img src="../assets/marketing digital.jpg" alt="Tech 2"></div>
+            <div class="rectangle-slide"><img src ="../assets/ddmm.jpeg" alt="Tech 4"></div>
+            <div class="rectangle-slide"><img src="../assets/digital marketing image.jpg" alt="Tech 3"></div>
+            <div class="rectangle-slide"><img src ="../assets/ddddmmmm.jpeg" alt="Tech 4"></div>
+            <div class="rectangle-slide"><img src="../assets/marketingg.jpg" alt="Tech 4"></div>
+
+            <div class="rectangle-slide"><img src="../assets/social media.jpg" alt="Tech 1"></div>
+            <div class="rectangle-slide"><img src ="../assets/dddmmm.jpeg" alt="Tech 4"></div>
+            <div class="rectangle-slide"><img src="../assets/marketing digital.jpg" alt="Tech 2"></div>
+            <div class="rectangle-slide"><img src ="../assets/ddmm.jpeg" alt="Tech 4"></div>
+            <div class="rectangle-slide"><img src="../assets/digital marketing image.jpg" alt="Tech 3"></div>
+            <div class="rectangle-slide"><img src ="../assets/ddddmmmm.jpeg" alt="Tech 4"></div>
+            <div class="rectangle-slide"><img src="../assets/marketingg.jpg" alt="Tech 4"></div>
+
+        </div>
+    </div>
+</section>
+<style>
+        /* ===== SECTION STYLING ===== */
+        .rectangle-slider-section {
+            background: #2a1207; /* Dark reddish-brown */
+            padding: 50px 0;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .rectangle-slider-title {
+            font-size: 2.4rem;
+            color: #fbeee6;
+            margin-bottom: 30px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* ===== SLIDER CONTAINER ===== */
+        .rectangle-slider-container {
+            overflow: hidden;
+            width: 100%;
+        }
+
+        /* ===== SLIDER TRACK ===== */
+        .rectangle-slider-track {
+            display: flex;
+            gap: 25px;
+            animation: scrollRight 25s linear infinite;
+        }
+
+        /* ===== SLIDES ===== */
+        .rectangle-slide {
+            flex: 0 0 auto;
+            width: 350px;
+            height: 210px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            transition: transform 0.5s, box-shadow 0.5s;
+        }
+
+        .rectangle-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s, filter 0.5s;
+        }
+
+        /* ===== HOVER EFFECTS ===== */
+        .rectangle-slide:hover {
+            transform: scale(1.12);
+            box-shadow: 0 18px 50px rgba(255,180,120,0.6);
+        }
+
+        .rectangle-slide:hover img {
+            filter: brightness(1.25) contrast(1.1);
+        }
+
+        /* Pause scroll on hover */
+        .rectangle-slider-container:hover .rectangle-slider-track {
+            animation-play-state: paused;
+        }
+
+        /* ===== SCROLL ANIMATION ===== */
+        @keyframes scrollRight {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 1024px) {
+            .rectangle-slide { width: 300px; height: 180px; }
+        }
+
+        @media (max-width: 768px) {
+            .rectangle-slide { width: 300; height: 160px; }
+        }
+
+        @media (max-width: 480px) {
+            .rectangle-slide { width: 300px; height: 130px; }
+        }
+
+</style>
+<section id="why-choose-dark" class="premium-services-section">
+    <h2 class="premium-section-title">Why Choose Us?</h2>
+    <div class="premium-services-grid">
+
+        <div class="premium-service-card">
+            <div class="premium-image-wrapper">
+                <img src="../assets/Tech-Driven Campaigns.jpeg" alt="Tech-Driven Campaigns" class="premium-service-image">
+            </div>
+            <h3>Tech-Driven Campaigns</h3>
+            <p>We use advanced analytics, AI-powered tools, and automation to optimize every aspect of your campaigns for maximum impact.</p>
+        </div>
+
+        <div class="premium-service-card">
+            <div class="premium-image-wrapper">
+                <img src="../assets/custom-strategy.jpeg" alt="Custom Strategy" class="premium-service-image">
+            </div>
+            <h3>Custom Strategy</h3>
+            <p>Every business is unique. We build tailor-made marketing strategies aligned with your specific goals and audience.</p>
+        </div>
+
+        <div class="premium-service-card">
+            <div class="premium-image-wrapper">
+                <img src="../assets/Transparent Reporting.jpeg" alt="Transparent Reporting" class="premium-service-image">
+            </div>
+            <h3>Transparent Reporting</h3>
+            <p>Stay informed with real-time dashboards, monthly reports, and measurable KPIs that show exactly how your campaigns are performing.</p>
+        </div>
+
+        <div class="premium-service-card">
+            <div class="premium-image-wrapper">
+                <img src="../assets/Dedicated Support.jpg" alt="Dedicated Support" class="premium-service-image">
+            </div>
+            <h3>Dedicated Support</h3>
+            <p>Our experienced marketing professionals work closely with you to continuously improve your results and answer all your queries.</p>
+        </div>
+
+    </div>
+</section>
+
+<style>
+/* SECTION */
+#why-choose-dark {
+    padding: 60px 20px;
+    background: #3a1f0b; /* Darker reddish-brown */
+    text-align: center;
+}
+
+.premium-section-title {
+    font-size: 3rem;
+    color: #fbeee6; /* Light cream */
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+/* GRID */
+.premium-services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+}
+
+/* SERVICE CARD */
+.premium-service-card {
+    background: #5c2c14; /* Dark reddish-brown card */
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+    transition: transform 0.5s, box-shadow 0.5s, background 0.5s;
+}
+
+/* Hover effect */
+.premium-service-card:hover {
+    transform: translateY(-15px) scale(1.05);
+    box-shadow: 0 35px 80px rgba(0,0,0,0.5);
+    background: #7a3d1e; /* Lighter on hover */
+}
+
+/* IMAGE */
+.premium-image-wrapper {
+    width: 100%;
+    height: 250px; /* Fixed height for all images */
+    overflow: hidden;
+    position: relative;
+}
+
+.premium-service-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image fills container without stretching */
+    transition: transform 0.6s ease, filter 0.6s ease, box-shadow 0.6s;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+/* Floating effect */
+@keyframes floatPremium {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+.premium-service-image {
+    animation: floatPremium 5s ease-in-out infinite;
+}
+
+/* Hover on image */
+.premium-service-card:hover .premium-service-image {
+    transform: scale(1.12);
+    filter: brightness(1.25);
+    box-shadow: 0 20px 40px rgba(255, 180, 120, 0.4);
+}
+
+/* TEXT */
+.premium-service-card h3 {
+    font-size: 1.8rem;
+    color: #fff8f0; /* Cream text */
+    margin: 20px 15px 10px 15px;
+}
+
+.premium-service-card p {
+    font-size: 1rem;
+    color: #fbeee6; /* Light cream */
+    line-height: 1.6;
+    margin: 0 15px 20px 15px;
+}
+
+/* MOBILE OPTIMIZATION */
+@media (max-width: 768px) {
+    .premium-services-grid { grid-template-columns: 1fr; gap: 30px; }
+    .premium-section-title { font-size: 2.4rem; }
+    .premium-service-card h3 { font-size: 1.6rem; }
+    .premium-service-card p { font-size: 0.95rem; }
+}
+
+@media (max-width: 480px) {
+    .premium-section-title { font-size: 2rem; }
+    .premium-service-card h3 { font-size: 1.4rem; }
+    .premium-service-card p { font-size: 0.9rem; }
+}
+</style>
+
+<section id="nextgen-achievement-section">
+  <h2 id="nextgen-achievement-title">Our Achievements</h2>
+  <div id="nextgen-achievement-grid">
+
+
+    <div class="nextgen-achievement-card" data-bg="https://images.unsplash.com/photo-1506765515384-028b60a970df?auto=format&fit=crop&w=800&q=80">
+      <div class="overlay"></div>
+      <div class="card-number" data-target="98">0<span class="suffix">%</span></div>
+      <h3>Client Satisfaction</h3>
+      <p>We exceed client expectations with our commitment to quality and creativity.</p>
+    </div>
+
+    <div class="nextgen-achievement-card" data-bg="https://cdn.phpjabbers.com/css/images/media/imageHappyClients.png">
+  <div class="overlay"></div>
+  <div class="card-number" data-target="500">0<span class="suffix">+</span></div>
+  <h3>Projects Delivered</h3>
+  <p>Successfully executed and launched digital marketing projects with measurable growth.</p>
+</div>
+
+    <div class="nextgen-achievement-card" data-bg="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=800&q=80">
+      <div class="overlay"></div>
+      <div class="card-number" data-target="24">0<span class="suffix">/7</span></div>
+      <h3>Support</h3>
+      <p>Our dedicated team is available round-the-clock for all business needs.</p>
+    </div>
+
+    <div class="nextgen-achievement-card" data-bg="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80">
+      <div class="overlay"></div>
+      <div class="card-number" data-target="200">0<span class="suffix">+</span></div>
+      <h3>Happy Clients</h3>
+      <p>Over 200 satisfied clients trust RamChait Technologies for their digital success.</p>
+    </div>
+
+  </div>
+</section>
+
+
+
+<style>
+#nextgen-achievement-section {
+  background: linear-gradient(135deg, #2b1a0e 0%, #4e3a1e 100%);
+  padding: 100px 20px;
+  text-align: center;
+  color: #f4e9d8;
+  font-family: 'Poppins', sans-serif;
+}
+
+#nextgen-achievement-title {
+  font-size: 3rem;
+  margin-bottom: 60px;
+  color: #ffebc2;
+  text-shadow: 0 0 15px rgba(255, 215, 120, 0.8);
+  position: relative;
+}
+
+#nextgen-achievement-title::after {
+  content: '';
+  width: 140px;
+  height: 5px;
+  background: linear-gradient(90deg, #ffcc70, #d4af37);
+  display: block;
+  margin: 20px auto 0;
+  border-radius: 3px;
+  box-shadow: 0 0 20px #ffcc70;
+}
+
+#nextgen-achievement-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 50px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.nextgen-achievement-card {
+  position: relative;
+  border-radius: 25px;
+  overflow: hidden;
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 60px 25px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+  transition: transform 0.6s ease, box-shadow 0.6s ease;
+  cursor: pointer;
+}
+
+.nextgen-achievement-card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(70, 45, 10, 0.65);
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  transition: background 0.6s ease;
+  z-index: 0;
+}
+
+.nextgen-achievement-card:hover .overlay {
+  background: rgba(212, 175, 55, 0.55);
+}
+
+.nextgen-achievement-card:hover {
+  transform: translateY(-15px) scale(1.04);
+  box-shadow: 0 30px 60px rgba(212, 175, 55, 0.5);
+}
+
+.nextgen-achievement-card .card-number {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ffdd99;
+  text-shadow: 0 0 20px #d4af37, 0 0 30px rgba(255, 215, 120, 0.5);
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.nextgen-achievement-card h3 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: #fff7e6;
+  position: relative;
+  z-index: 1;
+}
+
+.nextgen-achievement-card p {
+  font-size: 1rem;
+  color: #f8e7c2;
+  position: relative;
+  z-index: 1;
+  line-height: 1.6;
+}
+
+.nextgen-achievement-card::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, rgba(212,175,55,0.2), transparent 60%);
+  transform: scale(0);
+  transition: transform 0.8s ease;
+}
+
+.nextgen-achievement-card:hover::after {
+  transform: scale(1);
+}
+
+@media (max-width: 1024px) {
+  #nextgen-achievement-title { font-size: 2.6rem; }
+  .nextgen-achievement-card { height: 320px; padding: 50px 20px; }
+  .nextgen-achievement-card .card-number { font-size: 2.5rem; }
+}
+
+@media (max-width: 480px) {
+  #nextgen-achievement-title { font-size: 2rem; }
+  .nextgen-achievement-card { height: 300px; padding: 30px 15px; }
+  .nextgen-achievement-card h3 { font-size: 1.3rem; }
+  .nextgen-achievement-card p { font-size: 0.9rem; }
+  .nextgen-achievement-card .card-number { font-size: 2rem; }
+}
+</style>
+
+<script>
+// ✅ JS to Apply Backgrounds
+document.querySelectorAll('.nextgen-achievement-card').forEach(card => {
+  const bg = card.getAttribute('data-bg');
+  if (bg) {
+    card.style.backgroundImage = `url('${bg}')`;
+  }
+});
+</script>
+
+<script>
+// ===== COUNTER ANIMATION =====
+const counters = document.querySelectorAll('.card-number');
+const speed = 200; // Lower is faster
+
+function isInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+           rect.bottom >= 0;
+}
+
+function animateCounters() {
+    counters.forEach(counter => {
+        if(!counter.classList.contains('counted') && isInViewport(counter)) {
+            counter.classList.add('counted');
+            let target = parseFloat(counter.getAttribute('data-target'));
+            const suffixEl = counter.querySelector('.suffix');
+            let count = 0;
+            const increment = target / speed;
+
+            const updateCount = () => {
+                count += increment;
+                if(count < target) {
+                    counter.childNodes[0].nodeValue = Math.ceil(count);
+                    requestAnimationFrame(updateCount);
+                } else {
+                    counter.childNodes[0].nodeValue = target;
+                }
+            };
+            updateCount();
+        }
+    });
+}
+
+window.addEventListener('scroll', animateCounters);
+window.addEventListener('load', animateCounters);
+</script>
+
+
+<section class="digital-marketing-section">
+    <h2 class="section-title">Let’s Grow Your Brand Together!</h2>
+    <p class="section-subtitle">Partner with us to scale your business with our expert digital marketing solutions.</p>
+    <a href="contact.html" class="contact-button">Get Free Consultation</a>
+</section>
+
+
+
+    <!-- Contact Footer Section -->
+    <section class="new-contact-section" id="contact">
+        <div class="rotating-ring ring1"></div>
+        <div class="rotating-ring ring2"></div>
+
+        <div class="contact-content">
+            <!-- Quick Links -->
+            <div class="quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                   <li><a href="#home"><span>🏠</span><span>Home</span></a></li>
+                <li><a href="about.html"><span>ℹ️</span><span>About</span></a></li>
+                <li><a href="ourservices.html"><span>💼</span><span>Our-Services</span></a></li>
+                <li><a href="portfolio.html"><span>🖼️</span><span>Portfolio</span></a></li>
+                <li><a href="careers.html"><span>🎯</span><span>Careers</span></a></li>
+                <li><a href="blog.html"><span>📝</span><span>Blog</span></a></li>
+                <li><a href="contact.html"><span>✉️</span><span>Contact</span></a></li>
+
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="contact-container">
+                <h2 class="contact-title">Get in Touch</h2>
+                <p class="contact-subtitle">We are ready to build something amazing with you!</p>
+
+                <div class="contact-info">
+                    <p><strong>Email:</strong> hr@ramchaittechnologies.com</p>
+                    <p><strong>Phone:</strong> +91-9441308275</p>
+                </div>
+
+                <a href="contact.html" class="contact-button">Contact Us Now</a>
+            </div>
+
+            <!-- Social Media -->
+            <div class="social-media">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61580376749179" target="_blank"><img src="https://img.icons8.com/fluency/48/facebook-new.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/ramchaittechnologiespvtltd/" target="_blank"><img src="https://img.icons8.com/fluency/48/instagram-new.png" alt="Instagram"></a>
+                    <a href="https://x.com/RamchaitTechno" target="_blank"><img src="https://img.icons8.com/fluency/48/twitterx.png" alt="Twitter"></a>
+                    <a href="https://www.linkedin.com/company/ramchaittechnologies/posts/?feedView=all" target="_blank"><img src="https://img.icons8.com/fluency/48/linkedin.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    
+    <script src="digitalmarketing.js"></script>
+
+</body>
+</html>

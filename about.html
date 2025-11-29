@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ramchait Technologies is the best software and consulting company in Andhrapradesh, offering digital marketing, web development & job consultancy services.">
+    <title>best software and Consulting company in Andhrapradesh</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/favicon.png">
+
+    <link rel="stylesheet" href="about.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#" class="logo" style="display:flex; align-items:center; text-decoration:none;">
+  <img src="/favicon.ico" alt="Ramchait Technologies Logo" style="height:50px; margin-right:8px;">
+  <span>Ramchait Technologies</span>
+</a>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+        <div class="menu" id="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="has-submenu">
+                    <a href="ourservices.html" id="submenuToggle">Our Services &#9662;</a>
+                    <div class="submenu" id="submenu">
+                        <a href="web-development.html">Web Development</a>
+                        <a href="digital-marketing.html">Digital Marketing</a>
+                        <a href="consulting.html">Consulting Services</a>
+                        <a href="manualtesting.html">Manual Testing</a>
+                    </div>
+                </li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+<style>
+/* RESET */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+body{
+  background:#0d0f24;
+  font-family:"Poppins",sans-serif;
+  overflow-x:hidden;
+  color:white;
+}
+
+/* HERO WRAPPER */
+.hero-wrapper{
+  height:100vh;
+  width:100%;
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:0 7%;
+  background:radial-gradient(circle at top,#1e2347,#0d0f24);
+}
+
+/* TEXT AREA */
+.hero-text{
+  max-width:600px;
+  z-index:5;
+  animation:fadeIn 1.5s ease forwards;
+}
+.hero-text h1{
+  font-size:3.4rem;
+  font-weight:800;
+  line-height:1.2;
+}
+.hero-text p{
+  margin-top:15px;
+  font-size:1.15rem;
+  opacity:0.8;
+}
+.hero-btns{
+  margin-top:25px;
+  display:flex;
+  gap:20px;
+}
+.hero-btns a{
+  padding:12px 25px;
+  text-decoration:none;
+  border-radius:8px;
+  font-weight:600;
+  transition:0.3s;
+}
+.btn-primary{
+  background:#25b2ff;
+  color:#fff;
+}
+.btn-primary:hover{
+  background:#1a92d4;
+}
+.btn-secondary{
+  border:2px solid #25b2ff;
+  color:#25b2ff;
+}
+.btn-secondary:hover{
+  background:#25b2ff;
+  color:#fff;
+}
+
+/* ACHIEVEMENTS */
+.hero-achievements{
+  margin-top:30px;
+  display:flex;
+  gap:30px;
+  font-size:0.95rem;
+  opacity:0.9;
+}
+.hero-achievements div span{
+  font-size:1.4rem;
+  font-weight:700;
+  color:#25b2ff;
+}
+
+/* RIGHT SIDE 3D AREA */
+.hero-3d{
+  position:relative;
+  width:600px;
+  height:600px;
+  pointer-events:none;
+}
+
+/* Floating Developer Illustration */
+.dev-3d{
+  position:absolute;
+  width:330px;
+  top:10%;
+  left:15%;
+  animation:float 4s ease-in-out infinite;
+}
+
+/* Floating Code Symbols */
+.code-symbol{
+  position:absolute;
+  font-size:2rem;
+  color:#25b2ff;
+  opacity:0.6;
+  animation:floatRandom 6s infinite ease-in-out;
+}
+.code1{ top:10%; left:70%; }
+.code2{ top:70%; left:20%; }
+.code3{ top:40%; left:85%; }
+.code4{ top:15%; left:5%; }
+
+/* Laptop UI preview */
+.laptop-ui{
+  position:absolute;
+  bottom:8%;
+  left:22%;
+  width:350px;
+  animation:slideUp 1.8s ease forwards;
+}
+
+/* Sliding Webpages */
+.slide-web{
+  position:absolute;
+  width:200px;
+  right:5%;
+  top:20%;
+  animation:slideLeft 5s infinite linear;
+  opacity:0.8;
+}
+
+/* Animated Globe */
+.globe{
+  position:absolute;
+  width:150px;
+  bottom:10%;
+  right:10%;
+  animation:spin 18s linear infinite;
+  opacity:0.7;
+}
+
+/* Rotating Tech Stack Icons */
+.tech-ring{
+  position:absolute;
+  width:420px;
+  height:420px;
+  border-radius:50%;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  animation:rotateRing 20s linear infinite;
+  pointer-events:none;
+}
+.tech-ring span{
+  position:absolute;
+  font-size:2.4rem;
+  color:#25b2ff;
+}
+.tech1{ top:0; left:50%; transform:translateX(-50%); }
+.tech2{ right:0; top:50%; transform:translateY(-50%); }
+.tech3{ bottom:0; left:50%; transform:translateX(-50%); }
+.tech4{ left:0; top:50%; transform:translateY(-50%); }
+
+/* KEYFRAMES */
+@keyframes fadeIn{ from{opacity:0; transform:translateY(20px);} to{opacity:1;} }
+@keyframes float{ 0%,100%{transform:translateY(0);} 50%{transform:translateY(-20px);} }
+@keyframes floatRandom{ 0%{transform:translate(0,0);} 50%{transform:translate(15px,-20px);} 100%{transform:translate(0,0);} }
+@keyframes slideUp{ from{opacity:0; transform:translateY(40px);} to{opacity:1;} }
+@keyframes slideLeft{ 0%{transform:translateX(0);} 100%{transform:translateX(-150px);} }
+@keyframes spin{ from{transform:rotate(0deg);} to{transform:rotate(360deg);} }
+@keyframes rotateRing{ from{transform:translate(-50%,-50%) rotate(0deg);} to{transform:translate(-50%,-50%) rotate(360deg);} }
+.glow-blob{
+  position:absolute;
+  width:300px;
+  height:300px;
+  border-radius:50%;
+  filter:blur(90px);
+  opacity:0.4;
+  animation:glowMove 12s infinite ease-in-out;
+}
+.blob1{ background:#25b2ff; top:5%; left:10%; }
+.blob2{ background:#6c28ff; bottom:10%; right:10%; animation-delay:3s; }
+.blob3{ background:#ff3cf0; top:40%; right:30%; animation-delay:6s; }
+
+@keyframes glowMove{
+  0%{ transform:translate(0,0); }
+  50%{ transform:translate(80px,-60px); }
+  100%{ transform:translate(0,0); }
+}
+
+#particle-canvas{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index:1;
+}
+
+.sub-tagline{
+  font-size:1.2rem;
+  letter-spacing:1px;
+  font-weight:500;
+  color:#9cc9ff;
+  margin-bottom:15px;
+  text-transform:uppercase;
+  animation:fadeIn 1.8s ease;
+}
+
+/* Futuristic Grid Background */
+.grid-lines{
+  position:absolute;
+  width:100%;
+  height:100%;
+  background:linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+             linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+  background-size:40px 40px;
+  z-index:0;
+  animation:moveGrid 12s linear infinite;
+}
+@keyframes moveGrid{
+  from{ background-position:0 0; }
+  to{ background-position:0 200px; }
+}
+
+/* Hologram Ring */
+.holo-ring{
+  position:absolute;
+  width:260px;
+  height:260px;
+  border-radius:50%;
+  border:3px solid rgba(37,178,255,0.4);
+  box-shadow:0 0 25px rgba(37,178,255,0.6), inset 0 0 20px rgba(37,178,255,0.6);
+  top:25%;
+  right:18%;
+  animation:spin 10s linear infinite;
+}
+
+/* Achievement Badges */
+.badge-box{
+  margin-top:25px;
+  display:flex;
+  gap:15px;
+}
+.badge{
+  padding:6px 15px;
+  background:rgba(255,255,255,0.08);
+  border:1px solid rgba(255,255,255,0.1);
+  border-radius:20px;
+  backdrop-filter:blur(5px);
+  font-size:0.85rem;
+  animation:float 4s ease-in-out infinite;
+}
+
+/* ROTATING RING FOR PNG ICONS */
+.rmc-ring {
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: rotateIcons 18s linear infinite;
+  pointer-events: none;
+}
+
+.rmc-ring-img {
+  position: absolute;
+  width: 95px;
+  filter: drop-shadow(0 0 12px rgba(37,178,255,0.5));
+}
+
+/* Positions */
+.ii1 { top: 0; left: 50%; transform: translateX(-50%); }
+.ii2 { right: 0; top: 50%; transform: translateY(-50%); }
+.ii3 { bottom: 0; left: 50%; transform: translateX(-50%); }
+.ii4 { left: 0; top: 50%; transform: translateY(-50%); }
+
+/* Rotation Animation */
+@keyframes rotateIcons {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* ============================
+   SAFE MOBILE OPTIMIZATION
+   (Animations 100% unchanged)
+   ============================ */
+
+@media (max-width: 768px) {
+
+  .hero-wrapper {
+    flex-direction: column;
+    height: auto;
+    padding: 60px 5% 120px;
+    text-align: center;
+  }
+
+  .hero-text {
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .hero-btns {
+    justify-content: center;
+  }
+
+  .hero-achievements {
+    justify-content: center;
+    gap: 18px;
+  }
+
+  .badge-box {
+    justify-content: center;
+  }
+
+  /* DO NOT touch .hero-3d animations */
+  .hero-3d {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .hero-wrapper {
+    padding: 40px 4% 120px;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 0.95rem;
+  }
+
+  .hero-btns a {
+    padding: 12px 20px;
+    font-size: 0.95rem;
+  }
+
+  /* DO NOT change animation sizes */
+  .hero-3d {
+    margin-top: 20px;
+  }
+
+  .hero-achievements {
+    font-size: 0.85rem;
+  }
+}
+
+
+</style>
+
+<section class="hero-wrapper">
+  <!-- Glow Blobs -->
+  <div class="glow-blob blob1"></div>
+  <div class="glow-blob blob2"></div>
+  <div class="glow-blob blob3"></div>
+
+  <!-- Particle Layer -->
+  <canvas id="particle-canvas"></canvas>
+  <!-- LEFT TEXT -->
+  <div class="hero-text">
+      <h2 class="sub-tagline">ABOUT US</h2>
+      <h1>Welcome to Ramchait Technologies</h1>
+      <p>We are driven by creativity, powered by technology, and committed to delivering excellence in every line of code we write.</p>
+
+      <div class="hero-btns">
+          <a href="contact.html" class="btn-primary">Start Your Project</a>
+          <a href="portfolio.html" class="btn-secondary">View Portfolio</a>
+      </div>
+
+      <div class="badge-box">
+          <div class="badge"><i class='ri-rocket-line'></i> Fast Delivery</div>
+          <div class="badge"><i class='ri-shield-star-line'></i> Trusted Quality</div>
+          <div class="badge"><i class='ri-global-line'></i> Global Clients</div>
+      </div>
+
+      <div class="hero-achievements">
+          <div><span>50+</span><br>Projects</div>
+          <div><span>20+</span><br>Clients</div>
+          <div><span>5+ Years</span><br>Experience</div>
+      </div>
+  </div>
+
+  <!-- RIGHT ANIMATED 3D AREA -->
+  <div class="grid-lines"></div>
+
+  <div class="hero-3d">
+      <div class="holo-ring"></div>
+
+      <i class="ri-code-box-line code-symbol code1"></i>
+      <i class="ri-bar-chart-grouped-line code-symbol code2"></i>
+      <i class="ri-lightbulb-flash-line code-symbol code3"></i>
+      <i class="ri-stack-line code-symbol code4"></i>
+
+      <div class="rmc-ring">
+    <img src="../assets/webdevelopmentpng.png" class="rmc-ring-img ii1" alt="">
+    <img src="../assets/digitalmarketing_png-removebg-preview.png" class="rmc-ring-img ii2" alt="">
+    <img src="../assets/pftesting.png" class="rmc-ring-img ii3" alt="">
+    <img src="../assets/12e5e90d-aff1-4a50-b815-635a3ca61b2b-removebg-preview.png" class="rmc-ring-img ii4" alt="">
+</div>
+  </div>
+</section>
+
+<script>
+// Particle Animation
+const canvas = document.getElementById('particle-canvas');
+const ctx = canvas.getContext('2d');
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+let particlesArray = [];
+
+class Particle{
+  constructor(){
+    this.x = Math.random()*canvas.width;
+    this.y = Math.random()*canvas.height;
+    this.size = Math.random()*3+1;
+    this.speedX = Math.random()*1-0.5;
+    this.speedY = Math.random()*1-0.5;
+  }
+  update(){ this.x+=this.speedX; this.y+=this.speedY; if(this.size>0.2) this.size-=0.01; }
+  draw(){ ctx.fillStyle='rgba(255,255,255,0.7)'; ctx.beginPath(); ctx.arc(this.x,this.y,this.size,0,Math.PI*2); ctx.fill(); }
+}
+
+function init(){ for(let i=0;i<150;i++){ particlesArray.push(new Particle()); } }
+function handleParticles(){
+  for(let i=0;i<particlesArray.length;i++){
+    particlesArray[i].update(); particlesArray[i].draw();
+    if(particlesArray[i].size<=0.3){ particlesArray.splice(i,1); i--; particlesArray.push(new Particle()); }
+  }
+}
+
+function animate(){ ctx.clearRect(0,0,canvas.width,canvas.height); handleParticles(); requestAnimationFrame(animate); }
+init(); animate();
+</script>
+
+    
+
+    <section class="about-intro">
+    <div class="intro-card">
+        <h2>✅ Introduction (Who We Are)</h2>
+        <p>Ramchait Technologies is a fast-growing software company based in Andhrapradesh, offering a wide range of services including digital marketing, <a href="https://3straininginstitute.in/">website designing </a>& development, and job consultancy services. Our mission is to empower businesses with innovative digital solutions and help individuals find the right career path through personalized job placement support.
+        </p>
+    </div>
+</section>
+
+
+    <!-- About Content -->
+    <!-- About Content with Animation and Graphics -->
+
+    <section class="about-content">
+    <div class="about-card">
+        <img src="assets/ourstory.jpg" alt="Our Story">
+        <h2>Our Story</h2>
+        <p>Founded with a passion for technology, Ramchait Technologies is a leading software development company delivering transformative solutions across industries.</p>
+    </div>
+
+    <div class="about-card">
+        <img src="assets/our mission.jpg" alt="Our Mission">
+        <h2>Our Mission</h2>
+        <p>We aim to empower businesses by building innovative, scalable, and user-centric software solutions that drive growth and digital success.</p>
+    </div>
+
+    <div class="about-card">
+        <img src="assets/our vision.jpg" alt="Our Vision">
+        <h2>Our Vision</h2>
+        <p>To become a globally recognized software company, enabling businesses to achieve their full potential through technology-driven strategies and solutions.</p>
+    </div>
+</section>
+
+
+ <!-- Team Section -->
+    <section class="team-section">
+        <h2>Meet Our Expert Team</h2>
+        <div class="team-cards">
+            <div class="team-card">
+                <img src="assets/team1.jpg" alt="Team Member">
+                <h3>Balaram Naresh</h3>
+                <p>Founder & CEO</p>
+            </div>
+            <div class="team-card">
+                <img src="assets/team2.jpg" alt="Team Member">
+                <h3>.........</h3>
+                <p>Lead Developer</p>
+            </div>
+            <div class="team-card">
+                <img src="assets/team3.jpg" alt="Team Member">
+                <h3>..........</h3>
+                <p>Marketing Head</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <h2 style="text-align: center; padding-bottom: 40px; padding-top: 40px;">Why Choose Ramchait Technologies?</h2>
+    <div class="choose-cards">
+        <div class="choose-card fade-left">
+            <img src="https://img.icons8.com/fluency/96/rocket.png" alt="Fast Delivery" class="choose-icon">
+            <h3 style="color: white;" >Fast & Reliable</h3>
+            <p style="color: white;">We deliver software solutions quickly with zero compromise on quality, ensuring your projects launch on time.</p>
+        </div>
+        <div class="choose-card fade-in">
+            <img src="https://img.icons8.com/fluency/96/shield.png" alt="Secure Systems" class="choose-icon">
+            <h3 style="color: white;">Secure Systems</h3>
+            <p style="color: white;">Security is at the core of everything we build, protecting your data and digital assets at every layer.</p>
+        </div>
+        <div class="choose-card fade-right">
+            <img src="https://img.icons8.com/fluency/96/teamwork.png" alt="Expert Team" class="choose-icon">
+            <h3 style="color: white;">Expert Team</h3>
+            <p style="color: white;">Our passionate developers and technology experts craft intelligent, scalable, and high-performing solutions.</p>
+        </div>
+    </div>
+
+    <div class="timeline-section">
+    <h2 class="timeline-title">Our Journey</h2>
+    <div class="timeline">
+        <div class="timeline-item left">
+            <div class="timeline-content">
+                <h3>2018 - The Beginning</h3>
+                <p>We started our journey with a vision to create impactful digital solutions.</p>
+            </div>
+        </div>
+        <div class="timeline-item right">
+            <div class="timeline-content">
+                <h3>2019 - Expansion</h3>
+                <p>Our services expanded, reaching more industries and delivering excellence.</p>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="timeline-content">
+                <h3>2021 - Global Reach</h3>
+                <p>We took our services to the international stage, connecting globally.</p>
+            </div>
+        </div>
+        <div class="timeline-item right">
+            <div class="timeline-content">
+                <h3>2024 - Innovation</h3>
+                <p>We continue to innovate, grow, and deliver top-notch solutions to our clients.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <!-- Footer -->
+   
+    <!-- New Contact Section with Quick Links and Social Media -->
+<section class="new-contact-section" id="contact">
+    <div class="rotating-ring ring1"></div>
+    <div class="rotating-ring ring2"></div>
+
+    <div class="contact-content">
+        <!-- Left: Quick Links -->
+        <div class="quick-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#home"><span>🏠</span><span>Home</span></a></li>
+                <li><a href="about.html"><span>ℹ️</span><span>About</span></a></li>
+                <li><a href="ourservices.html"><span>💼</span><span>Our-Services</span></a></li>
+                <li><a href="portfolio.html"><span>🖼️</span><span>Portfolio</span></a></li>
+                <li><a href="careers.html"><span>🎯</span><span>Careers</span></a></li>
+                <li><a href="blog.html"><span>📝</span><span>Blog</span></a></li>
+                <li><a href="contact.html"><span>✉️</span><span>Contact</span></a></li>
+
+            </ul>
+        </div>
+
+        <!-- Center: Contact Info -->
+        <div class="contact-container">
+            <h2 class="contact-title">Get in Touch</h2>
+            <p class="contact-subtitle">We are ready to build something amazing with you!</p>
+
+            <div class="contact-info">
+                    <p><strong>Email:</strong> hr@ramchaittechnologies.com</p>
+                    <p><strong>Phone:</strong> +91-9441308275</p>
+            </div>
+
+            <a href="contact.html" class="contact-button">Contact Us Now</a>
+        </div>
+
+        <!-- Right: Social Media -->
+        <div class="social-media">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61580376749179" target="_blank"><img src="https://img.icons8.com/fluency/48/facebook-new.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/ramchaittechnologiespvtltd/" target="_blank"><img src="https://img.icons8.com/fluency/48/instagram-new.png" alt="Instagram"></a>
+                    <a href="https://x.com/RamchaitTechno" target="_blank"><img src="https://img.icons8.com/fluency/48/twitterx.png" alt="Twitter"></a>
+                    <a href="https://www.linkedin.com/company/ramchaittechnologies/posts/?feedView=all" target="_blank"><img src="https://img.icons8.com/fluency/48/linkedin.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <script src="about.js"></script>
+    <!-- Lottie Player CDN -->
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</body>
+
+</html>
